@@ -1,0 +1,33 @@
+[OPTIONS]
+Auto Index=Yes
+Compatibility=1.1 or later
+Compiled file=DMS User Manual.chm
+Contents file=Table of Contents.hhc
+Default Window=DMS Window
+Default topic=DMS HTML NEW\0_Introduction.htm
+Display compile progress=No
+Full-text search=Yes
+Index file=DMS HTML NEW\Index.hhk
+Language=0x409 English (United States)
+
+[WINDOWS]
+DMS Window=,"Table of Contents.hhc","DMS HTML NEW\Index.hhk","DMS HTML NEW\0_Introduction.htm",,,,,,0x42520,,0x3006,[271,372,593,566],,,,,,,0
+
+
+[FILES]
+DMS HTML NEW\0_Introduction.htm
+DMS HTML NEW\0_PatientPage.htm
+DMS HTML NEW\0_SearchPatient.htm
+DMS HTML NEW\1_CreateProcedureOrder.htm
+DMS HTML NEW\1_CreatingAppointment.htm
+DMS HTML NEW\1_CreatingPatient.htm
+DMS HTML NEW\2_CheckInOut.htm
+DMS HTML NEW\3_Billing.htm
+DMS HTML NEW\4_ACl.htm
+DMS HTML NEW\ACL_image.htm
+DMS HTML NEW\Cash_image.htm
+DMS HTML NEW\Check_image.htm
+DMS HTML NEW\CreateNew_image.htm
+
+[INFOTYPES]
+

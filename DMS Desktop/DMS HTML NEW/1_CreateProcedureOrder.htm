@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Create Procedure Order</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="Keywords" content="Create procedure order, patient detail, ordering, order date, internal time collected, status, priority, clinical history, procedure type, laboratory test, test codes, erase">
+<style type="text/css">
+/* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+/* Author: Nicolas Hery - http://nicolashery.com */
+/* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+/* Source: https://github.com/nicolahery/markdownpad-github */
+
+/* RESET
+=============================================================================*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* BODY
+=============================================================================*/
+
+body {
+  font-family: Helvetica, arial, freesans, clean, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+body>*:first-child {
+  margin-top: 0 !important;
+}
+
+body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* BLOCKS
+=============================================================================*/
+
+p, blockquote, ul, ol, dl, table, pre {
+  margin: 15px 0;
+}
+
+/* HEADERS
+=============================================================================*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 28px;
+  color: #000;
+}
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 14px;
+}
+
+h6 {
+  color: #777;
+  font-size: 14px;
+}
+
+body>h2:first-child, body>h1:first-child, body>h1:first-child+h2, body>h3:first-child, body>h4:first-child, body>h5:first-child, body>h6:first-child {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0;
+}
+
+h1+p, h2+p, h3+p, h4+p, h5+p, h6+p {
+  margin-top: 10px;
+}
+
+/* LINKS
+=============================================================================*/
+
+a {
+  color: #4183C4;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* LISTS
+=============================================================================*/
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul li > :first-child, 
+ol li > :first-child, 
+ul li ul:first-of-type, 
+ol li ol:first-of-type, 
+ul li ol:first-of-type, 
+ol li ul:first-of-type {
+  margin-top: 0px;
+}
+
+ul ul, ul ol, ol ol, ol ul {
+  margin-bottom: 0;
+}
+
+dl {
+  padding: 0;
+}
+
+dl dt {
+  font-size: 14px;
+  font-weight: bold;
+  font-style: italic;
+  padding: 0;
+  margin: 15px 0 5px;
+}
+
+dl dt:first-child {
+  padding: 0;
+}
+
+dl dt>:first-child {
+  margin-top: 0px;
+}
+
+dl dt>:last-child {
+  margin-bottom: 0px;
+}
+
+dl dd {
+  margin: 0 0 15px;
+  padding: 0 15px;
+}
+
+dl dd>:first-child {
+  margin-top: 0px;
+}
+
+dl dd>:last-child {
+  margin-bottom: 0px;
+}
+
+/* CODE
+=============================================================================*/
+
+pre, code, tt {
+  font-size: 12px;
+  font-family: Consolas, "Liberation Mono", Courier, monospace;
+}
+
+code, tt {
+  margin: 0 0px;
+  padding: 0px 0px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+pre>code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+kbd {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #DDDDDD;
+    background-image: linear-gradient(#F1F1F1, #DDDDDD);
+    background-repeat: repeat-x;
+    border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+    border-image: none;
+    border-radius: 2px 2px 2px 2px;
+    border-style: solid;
+    border-width: 1px;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    line-height: 10px;
+    padding: 1px 4px;
+}
+
+/* QUOTES
+=============================================================================*/
+
+blockquote {
+  border-left: 4px solid #DDD;
+  padding: 0 15px;
+  color: #777;
+}
+
+blockquote>:first-child {
+  margin-top: 0px;
+}
+
+blockquote>:last-child {
+  margin-bottom: 0px;
+}
+
+/* HORIZONTAL RULES
+=============================================================================*/
+
+hr {
+  clear: both;
+  margin: 15px 0;
+  height: 0px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #ddd;
+  padding: 0;
+}
+
+/* TABLES
+=============================================================================*/
+
+table th {
+  font-weight: bold;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 6px 13px;
+}
+
+table tr {
+  border-top: 1px solid #ccc;
+  background-color: #fff;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+/* IMAGES
+=============================================================================*/
+
+img {
+  max-width: 100%
+}
+
+#heading {
+  text-align: center;
+}
+
+</style>
+</head>
+<body>
+    <div id="heading">
+        <h1>Dotmark Medical Solutions (DMS) User Manual</h1>
+      <p><em>"Easy, Quick and Efficient"</em></p>
+      <p>At DMS we strive to facilitate and streamline all your enterprise needs to achieve excellent care delivery and clinical productivity.</p>
+    <hr>
+      </div>
+<h3>Create Procedure Order</h3>
+<p>Procedure Order is a series of tests of some kind that is requested to the patient by the doctor.</p>
+<ul>
+<li>Choose <strong>Create Procedure Order</strong> from the side bar on the left side of the screen.</li>
+<li>Fill up or search the required patient. You can also create a new patient from here itself.</li>
+<li>Searching patient and selecting the required one auto fills the <strong>Patient Details</strong> form. Patient details editing can also be done here if needed.</li>
+</ul>
+<p><img src="./images/CreateNew/NewProcedureOrder.jpg" /> </p>
+<ul>
+<li>
+In <strong>Procedure Details</strong>,
+<ul>
+<li><strong>Ordering:</strong> This is the name of the Provider. Just type in few initials of the Provider you are searching, and a box will appear with suggestions. If the provider, you are looking for is not in the list then type in the name of the provider to create a new provider.</li>
+<li><strong>Order Date:</strong> Current date of the order.</li>
+<li><strong>Internal Time Collected:</strong> Sample collected precise time.</li>
+<li><strong>Status:</strong> Status of the test conducted. Either pending, routed (in process), completed or canceled.</li>
+<li><strong>Priority:</strong> Test priority.</li>
+<li><strong>Clinical History:</strong> Previous tests results of that patient.</li>
+<li><strong>Procedure Type:</strong> Procedure type contains different types of test that a patient can perform. As shown in the image below, different test can be selected from the list. </li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p><strong>NOTE:</strong> <em>Just two tests are shown in the image below. There might be more in your case.</em> </p>
+</blockquote>
+<p><img src="./images/CreateNew/ProcedureTestSelect.jpg" /> </p>
+<p>For demonstration, only <strong>Laboratory test</strong> example will be shown here.</p>
+<p>Select <strong>Laboratory test</strong> and click on <strong>Add Laboratory Test</strong> to add multiple test for that patient.</p>
+<p><img src="./images/CreateNew/MultipleTests.jpg" /> </p>
+<p>By clicking on the <strong>Laboratory Test</strong> box as shown in the image below. <strong>Laboratory Test Codes</strong> will pop up.  Search for required laboratory test codes here.</p>
+<blockquote>
+<p><strong>NOTE:</strong> <em>Details in this page are not relevant as it is shown just for demonstration purposes.</em></p>
+</blockquote>
+<p><img src="./images/CreateNew/TestCodes.jpg" /> </p>
+<p>Dropdown at the right end of this section, shows different tests associated with the test code that has been selected. This example of Blood Sugar has just one selection.</p>
+<p><img src="./images/CreateNew/Dropdown.jpg" /> </p>
+<p>Any selection can be easily removed by pressing on that test and selecting <strong>ERASE.</strong> Here, by pressing <strong>Blood Sugar (1hrs.PP),</strong> same window for Code Search appears. Now click on <strong>ERASE</strong> to remove that selection.</p>
+<p><img src="./images/CreateNew/Erase.jpg" /> </p>
+<p>Procedure order created will be stored in <strong>QUICK ORDER</strong> tab on <a href="0_PatientPage.htm"><strong>Patient Page.</strong></a></p>
+
+</body>
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->

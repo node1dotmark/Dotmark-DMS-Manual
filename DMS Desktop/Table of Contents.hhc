@@ -1,0 +1,80 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<OBJECT type="text/site properties">
+	<param name="ImageType" value="Folder">
+</OBJECT>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Introduction">
+		<param name="Local" value="DMS HTML NEW\0_Introduction.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Create New">
+		<param name="Local" value="DMS HTML NEW\CreateNew_image.htm">
+		<param name="ImageNumber" value="1">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Create New Patient">
+			<param name="Local" value="DMS HTML NEW\1_CreatingPatient.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Create New Appointment">
+			<param name="Local" value="DMS HTML NEW\1_CreatingAppointment.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Create New Procedure Order">
+			<param name="Local" value="DMS HTML NEW\1_CreateProcedureOrder.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Patient Page">
+		<param name="Local" value="DMS HTML NEW\0_PatientPage.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Search Patient">
+		<param name="Local" value="DMS HTML NEW\0_SearchPatient.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Check In and Check Out">
+		<param name="Local" value="DMS HTML NEW\Check_image.htm">
+		<param name="ImageNumber" value="1">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Check In/Out">
+			<param name="Local" value="DMS HTML NEW\2_CheckInOut.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Cash">
+		<param name="Local" value="DMS HTML NEW\Cash_image.htm">
+		<param name="ImageNumber" value="1">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Billing">
+			<param name="Local" value="DMS HTML NEW\3_Billing.htm">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Access Control List">
+		<param name="Local" value="DMS HTML NEW\ACL_image.htm">
+		<param name="ImageNumber" value="1">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="ACL Configuration">
+			<param name="Local" value="DMS HTML NEW\4_ACl.htm">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="DMS Configuration">
+			<param name="Local" value="DMS HTML NEW\5_ConfigurationDMS.html">
+			</OBJECT>
+	</UL>
+</UL>
+</BODY></HTML>

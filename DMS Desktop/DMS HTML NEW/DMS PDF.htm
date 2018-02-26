@@ -1,0 +1,1416 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>DMS USER MANUAL FULL</title>
+    <meta name="Keywords" content="login, username, password, url setup, change ip">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+        /* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+
+        /* Author: Nicolas Hery - http://nicolashery.com */
+
+        /* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+
+        /* Source: https://github.com/nicolahery/markdownpad-github */
+
+        /* RESET
+=============================================================================*/
+
+        html,
+        body,
+        div,
+        span,
+        applet,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        u,
+        i,
+        center,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        embed,
+        figure,
+        figcaption,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        output,
+        ruby,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        /* BODY
+=============================================================================*/
+
+        body {
+            font-family: Helvetica, arial, freesans, clean, sans-serif;
+            font-size: 14px;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+            padding: 20px;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        body>*:first-child {
+            margin-top: 0 !important;
+        }
+
+        body>*:last-child {
+            margin-bottom: 0 !important;
+        }
+
+        /* BLOCKS
+=============================================================================*/
+
+        p,
+        blockquote,
+        ul,
+        ol,
+        dl,
+        table,
+        pre {
+            margin: 15px 0;
+        }
+
+        /* HEADERS
+=============================================================================*/
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 20px 0 10px;
+            padding: 0;
+            font-weight: bold;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        h1 tt,
+        h1 code,
+        h2 tt,
+        h2 code,
+        h3 tt,
+        h3 code,
+        h4 tt,
+        h4 code,
+        h5 tt,
+        h5 code,
+        h6 tt,
+        h6 code {
+            font-size: inherit;
+        }
+
+        h1 {
+            font-size: 28px;
+            color: #000;
+        }
+
+        h2 {
+            font-size: 24px;
+            border-bottom: 1px solid #ccc;
+            color: #000;
+        }
+
+        h3 {
+            font-size: 18px;
+        }
+
+        h4 {
+            font-size: 16px;
+        }
+
+        h5 {
+            font-size: 14px;
+        }
+
+        h6 {
+            color: #777;
+            font-size: 14px;
+        }
+
+        body>h2:first-child,
+        body>h1:first-child,
+        body>h1:first-child+h2,
+        body>h3:first-child,
+        body>h4:first-child,
+        body>h5:first-child,
+        body>h6:first-child {
+            margin-top: 0;
+            padding-top: 0;
+        }
+
+        a:first-child h1,
+        a:first-child h2,
+        a:first-child h3,
+        a:first-child h4,
+        a:first-child h5,
+        a:first-child h6 {
+            margin-top: 0;
+            padding-top: 0;
+        }
+
+        h1+p,
+        h2+p,
+        h3+p,
+        h4+p,
+        h5+p,
+        h6+p {
+            margin-top: 10px;
+        }
+
+        /* LINKS
+=============================================================================*/
+
+        a {
+            color: #4183C4;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* LISTS
+=============================================================================*/
+
+        ul,
+        ol {
+            padding-left: 30px;
+        }
+
+        ul li> :first-child,
+        ol li> :first-child,
+        ul li ul:first-of-type,
+        ol li ol:first-of-type,
+        ul li ol:first-of-type,
+        ol li ul:first-of-type {
+            margin-top: 0px;
+        }
+
+        ul ul,
+        ul ol,
+        ol ol,
+        ol ul {
+            margin-bottom: 0;
+        }
+
+        dl {
+            padding: 0;
+        }
+
+        dl dt {
+            font-size: 14px;
+            font-weight: bold;
+            font-style: italic;
+            padding: 0;
+            margin: 15px 0 5px;
+        }
+
+        dl dt:first-child {
+            padding: 0;
+        }
+
+        dl dt>:first-child {
+            margin-top: 0px;
+        }
+
+        dl dt>:last-child {
+            margin-bottom: 0px;
+        }
+
+        dl dd {
+            margin: 0 0 15px;
+            padding: 0 15px;
+        }
+
+        dl dd>:first-child {
+            margin-top: 0px;
+        }
+
+        dl dd>:last-child {
+            margin-bottom: 0px;
+        }
+
+        /* CODE
+=============================================================================*/
+
+        pre,
+        code,
+        tt {
+            font-size: 12px;
+            font-family: Consolas, "Liberation Mono", Courier, monospace;
+        }
+
+        code,
+        tt {
+            margin: 0 0px;
+            padding: 0px 0px;
+            white-space: nowrap;
+            border: 1px solid #eaeaea;
+            background-color: #f8f8f8;
+            border-radius: 3px;
+        }
+
+        pre>code {
+            margin: 0;
+            padding: 0;
+            white-space: pre;
+            border: none;
+            background: transparent;
+        }
+
+        pre {
+            background-color: #f8f8f8;
+            border: 1px solid #ccc;
+            font-size: 13px;
+            line-height: 19px;
+            overflow: auto;
+            padding: 6px 10px;
+            border-radius: 3px;
+        }
+
+        pre code,
+        pre tt {
+            background-color: transparent;
+            border: none;
+        }
+
+        kbd {
+            -moz-border-bottom-colors: none;
+            -moz-border-left-colors: none;
+            -moz-border-right-colors: none;
+            -moz-border-top-colors: none;
+            background-color: #DDDDDD;
+            background-image: linear-gradient(#F1F1F1, #DDDDDD);
+            background-repeat: repeat-x;
+            border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+            border-image: none;
+            border-radius: 2px 2px 2px 2px;
+            border-style: solid;
+            border-width: 1px;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            line-height: 10px;
+            padding: 1px 4px;
+        }
+
+        /* QUOTES
+=============================================================================*/
+
+        blockquote {
+            border-left: 4px solid #DDD;
+            padding: 0 15px;
+            color: #777;
+        }
+
+        blockquote>:first-child {
+            margin-top: 0px;
+        }
+
+        blockquote>:last-child {
+            margin-bottom: 0px;
+        }
+
+        /* HORIZONTAL RULES
+=============================================================================*/
+
+        hr {
+            clear: both;
+            margin: 15px 0;
+            height: 0px;
+            overflow: hidden;
+            border: none;
+            background: transparent;
+            border-bottom: 1px solid #ddd;
+            padding: 0;
+        }
+
+        /* TABLES
+=============================================================================*/
+
+        table th {
+            font-weight: bold;
+        }
+
+        table th,
+        table td {
+            border: 1px solid #ccc;
+            padding: 6px 13px;
+        }
+
+        table tr {
+            border-top: 1px solid #ccc;
+            background-color: #fff;
+        }
+
+        table tr:nth-child(2n) {
+            background-color: #f8f8f8;
+        }
+
+        #heading {
+            text-align: center;
+        }
+
+        /* IMAGES
+=============================================================================*/
+
+        img {
+            max-width: 100%
+        }
+
+        .TMlogo {
+            width: 183px;
+            height: 90px;
+        }
+
+        #backToTop {
+            text-align: right;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div id="heading">
+        <img class="TMlogo" src="./images/Dotmartk TM logo.jpg" ALIGN="center" alt="">
+        <h1>Dotmark Medical Solutions (DMS) User Manual</h1>
+        <p>
+            <em>"Easy, Quick and Efficient"</em>
+        </p>
+        <p>At DMS we strive to facilitate and streamline all your enterprise needs to achieve excellent care delivery and clinical
+            productivity.
+        </p>
+        <hr>
+    </div>
+
+    <div id="tableOfContent">
+        <h4><em>Table of contents</em></h4>
+        <ol>
+            <strong>
+                <li><a href="#introduction">Introduction</a></li>       
+                <li><a href="#createPatient">Create a New Patient</a></li>       
+                <li><a href="#createAppointment">Create a New Appointment</a></li>       
+                <li><a href="#createProcedureOrder">Create Procedure Order</a></li>       
+                <li><a href="#patientPage">Patient Page</a></li>       
+                <li><a href="#searchPatient">Search Patient</a></li>       
+                <li><a href="#checkInOut">Check In and Check Out</a></li>       
+                <li><a href="#cash">Billing</a></li>       
+                <li><a href="#acl">Access Control List</a></li>       
+            </strong>
+        </ol>
+    </div>
+
+    <div id="introduction">
+        
+        <p id="backToTop"><a href="#tableOfContent">Back to Top</a></p> 
+        <h4>Introduction</h4>       
+        <h5>Open DMS and login using your username and password. This manual will be using an Admin account who has full access to
+            the DMS facilities.</h5>
+          <blockquote>
+            <p>
+              <strong>NOTE:</strong>
+              <em>Not all the users are given access to all the facilities. Access varies with different departments and their needs.</em>
+            </p>
+          </blockquote>
+          <ul>
+            <li>Login screen mainly consist of Username, Password and a Login button as in the image below. </li>
+          </ul>
+          <p>
+            <img src="./images/loginInScreen.jpg" /> </p>
+          <ul>
+            <li>In addition, it also has an Earth logo on the top right corner which does the URL setup. This URL setup contains
+              <strong>http://</strong> followed by your IP address (<strong>192.168.88.250</strong> in this case) and the port on which the web service is running
+              (<strong>3000</strong> in this case). This web service runs in the server. Port must be separated from the IP address
+              using a colon(<strong>:</strong>).</li>
+          </ul>
+          <blockquote>
+            <p>
+              <strong>NOTE:</strong>
+              <em>The IP address is unique to each server. Port may also vary in your case.</em>
+            </p>
+          </blockquote>
+          <p>
+            <img src="./images/urlSetup.jpg" /> </p>
+          <p>With successful login you will be directed to the Home screen. Home screen contents will be discussed below,</p>
+          <ul>
+            <li>This page displays all the Doctor's appointments for today. Past and future appointments can also be viewed by selecting
+              the date options.</li>
+            <li>The
+              <em>status</em> should be selected
+              <strong>None</strong> until further notice.</li>
+            <li>Appointments for specific
+              <em>facility</em> and respective
+              <em>Doctors</em> can also be view separately. </li>
+          </ul>
+          <p>
+            <img src="./images/HomeScreen/Firstpage.jpg" /> </p>
+          <ul>
+            <li>Right click on an appointment from the list, gives you access to
+              <em>change status</em> and
+              <em>view patient</em>.
+            </li>
+          </ul>
+          <p><img src="./images/HomeScreen/RightClick.jpg" /></p>
+          <p><strong>Change Status</strong> will display a pop up, where user can change the <em>Status Type</em> and <em>Exam Room Number</em> for the selected patient as shown in the image below.</p>
+          <p><img src="./images/HomeScreen/changeStatusPopup.jpg" alt=""></p>
+          <p><strong>View Patient</strong> will navigate to the <a href="0_PatientPage.htm">Patient Page</a> of the patient selected.</p>
+          <ul>
+            <li>
+              Left Nav Bar contains five icons. As shown in the image below hover over them to see a tooltip that pops up a message with their individual names.
+              <ul>
+                <li>Search existing patients from the
+                  <strong>Search Patient</strong> bar on the top of the screen.</li>
+              </ul>
+            </li>
+            <li>Select appropriate date from the
+              <strong>Status</strong> to see the appointment for that date.</li>
+          </ul>
+          <blockquote>
+            <p>
+              <strong>Note</strong>
+              <em>that the date and time in DMS is configured from the server automatically but not from the computer you are using.</em>
+            </p>
+          </blockquote>
+          <p><img src="./images/HomeScreen/HomeScreen.jpg" /></p>
+              <p>The feedback button can be used to send messages regarding the DMS functionalities. Any bug, issue or recommendations
+                for improvements can be sent from here. Please be very specific in providing descriptions while sending messages.</p>
+          <p>
+            <img src="./images/HomeScreen/Feedback.jpg" /></p>
+
+    </div>
+
+    <div id="createPatient">
+            <p id="backToTop"><a href="#tableOfContent">Back to Top</a></p>
+        <h3>Create a New Patient</h3>
+        <ul>
+            <li>Click on the
+                <strong>Create New</strong> icon on the Left Nav Bar.</li>
+            <li>Click on
+                <strong>Create Patient</strong> tab on the left side of your screen to register a new patient.</li>
+        </ul>
+        <p>
+            <img src="./images/CreateNew/CreateNewPatient.jpg" /> </p>
+        <ul>
+            <li>Enter the details of the new patient, scroll down and press
+                <strong>Save</strong> to create a new patient or press
+                <strong>Cancel</strong> to discard the new entry. </li>
+        </ul>
+        <blockquote>
+            <p>
+                <strong>NOTE:</strong>
+                <em>Simply enter age of the patient directly into the
+                    <strong>Age in Years</strong> section inside the
+                    <strong>Nepali date</strong> to auto calculate the right date of birth of the patient. Nepali date of birth can
+                    also be easily converted to English date of birth from here.</em>
+            </p>
+        </blockquote>
+        <p>
+            <img src="./images/CreateNew/AgeConvert.jpg" /> </p>
+        <ul>
+            <li>If any mandatory field are missing, then red border around that field will appear.</li>
+        </ul>
+        <p>
+            <img src="./images/CreateNew/MissingFields.jpg" /> </p>
+        <ul>
+            <li>After successful saving of the form, you will be directed to the
+                <strong>Patient Page</strong> as in the image below.</li>
+        </ul>
+        <p>
+            <img src="./images/CreateNew/NewPatient.jpg" /> </p>
+        <p>To find out more about Demographics, Appointment, Quick Order, Card/Label, Billing, Invoice and Refund follow this
+            link,
+            <a href="0_PatientPage.htm">Patient Page.
+                <a>
+        </p>
+
+    </div>
+
+    <div id="createAppointment">
+            <p id="backToTop"><a href="#tableOfContent">Back to Top</a></p>
+        <h3>Creating a New Appointment</h3>
+        <ul>
+            <li>Creating new appointment can be done by clicking on the
+                <strong>Create Appointment</strong> tab on left side of the screen.</li>
+            <li>Here, existing patient can be searched from
+                <strong>Search Patient.</strong>
+            </li>
+            <li>Searching patient and selecting the required one auto fills the
+                <strong>Patient Details</strong> form. Patient details editing can also be done here if needed.</li>
+        </ul>
+        <p>
+            <img src="./images/CreateNew/CreateAppointment.jpg" /> </p>
+        <p>
+            <img src="./images/CreateNew/SearchBox.jpg" /> </p>
+        <blockquote>
+            <p>
+                <strong>NOTE:</strong>
+                <em>You can also create a new patient from this window directly. To do this just skip them
+                    <strong>Search Patient</strong> section and proceed with the form.</em>
+            </p>
+        </blockquote>
+        <ul>
+            <li>
+                The second half i.e.
+                <strong>Appointment Details</strong> consist of details of the Hospital.
+                <ul>
+                    <li>
+                        <strong>Provider:</strong> Doctor that patient want to visit and his/her availability.</li>
+                    <li>
+                        <strong>Category:</strong> This is the category of the patients. This dropdown will show list of items like
+                        <em>New Patient,</em>
+                        <em>Established Patient</em> or more. This is the current category status of that patient for that hospital.</li>
+                    <li>
+                        <strong>Facility:</strong> Department of the
+                        <strong>Provider.</strong>
+                    </li>
+                    <li>
+                        <strong>Time:</strong> Press
+                        <strong>Find Available</strong> to see
+                        <strong>Provider's</strong> availability. Error message will be displayed if appointment time cannot be found.</li>
+                    <li>
+                        <strong>Billing Facility:</strong> Where the bill is being sent.</li>
+                    <li>
+                        <strong>Title:</strong> Category's type of the
+                        <strong>Category</strong> selected. </li>
+                    <li>
+                        <strong>Status:</strong> Patient appointment status for the patient visit. This should always be selected
+                        <strong>None.</strong>
+                    </li>
+                    <li>
+                        <strong>Comments:</strong> Any additional notes can go here.</li>
+                </ul>
+            </li>
+        </ul>
+        <p>
+            <img src="./images/CreateNew/AppointmentDetails.jpg" /> </p>
+        <p>
+            <strong>Find Available:</strong> Shows availability of the
+            <strong>Provider</strong> selected as shown in the image below. </p>
+        <p>
+            <img src="./images/CreateNew/AvaliableTimes.jpg" /> </p>
+        <ul>
+            <li>Once appointment is made with the respective Provider then appointment charge is added to billing. </li>
+        </ul>
+        <p>Any new patient's appointment will be displayed in
+            <strong>APPOINTMENT</strong> tab on
+            <a href="0_PatientPage.htm">
+                <strong>Patient Page</strong>
+            </a> as shown below.</p>
+        <p>
+            <img src="./images/PatientPage/AppointmentMade.jpg" /> </p>
+        <ul>
+            <li>Editing, Deleting and Printing can be done of the appointment created.</li>
+            <li>Appointment editing page is shown in the image below.</li>
+        </ul>
+        <blockquote>
+            <p>
+                <strong>NOTE:</strong>
+                <em>If the payment is done for an appointment for that provider then the Provider cannot be edited.</em>
+            </p>
+        </blockquote>
+        <p>
+            <img src="./images/PatientPage/EditingAppointment.jpg" />
+        </p>
+
+    </div>
+
+    <div id="createProcedureOrder">
+            <p id="backToTop"><a href="#tableOfContent">Back to Top</a></p>
+            <h3>Create Procedure Order</h3>
+            <p>Procedure Order is a series of tests of some kind that is requested to the patient by the doctor.</p>
+            <ul>
+            <li>Choose <strong>Create Procedure Order</strong> from the side bar on the left side of the screen.</li>
+            <li>Fill up or search the required patient. You can also create a new patient from here itself.</li>
+            <li>Searching patient and selecting the required one auto fills the <strong>Patient Details</strong> form. Patient details editing can also be done here if needed.</li>
+            </ul>
+            <p><img src="./images/CreateNew/NewProcedureOrder.jpg" /> </p>
+            <ul>
+            <li>
+            In <strong>Procedure Details</strong>,
+            <ul>
+            <li><strong>Ordering:</strong> This is the name of the Provider. Just type in few initials of the Provider you are searching, and a box will appear with suggestions. If the provider, you are looking for is not in the list then type in the name of the provider to create a new provider.</li>
+            <li><strong>Order Date:</strong> Current date of the order.</li>
+            <li><strong>Internal Time Collected:</strong> Sample collected precise time.</li>
+            <li><strong>Status:</strong> Status of the test conducted. Either pending, routed (in process), completed or canceled.</li>
+            <li><strong>Priority:</strong> Test priority.</li>
+            <li><strong>Clinical History:</strong> Previous tests results of that patient.</li>
+            <li><strong>Procedure Type:</strong> Procedure type contains different types of test that a patient can perform. As shown in the image below, different test can be selected from the list. </li>
+            </ul>
+            </li>
+            </ul>
+            <blockquote>
+            <p><strong>NOTE:</strong> <em>Just two tests are shown in the image below. There might be more in your case.</em> </p>
+            </blockquote>
+            <p><img src="./images/CreateNew/ProcedureTestSelect.jpg" /> </p>
+            <p>For demonstration, only <strong>Laboratory test</strong> example will be shown here.</p>
+            <p>Select <strong>Laboratory test</strong> and click on <strong>Add Laboratory Test</strong> to add multiple test for that patient.</p>
+            <p><img src="./images/CreateNew/MultipleTests.jpg" /> </p>
+            <p>By clicking on the <strong>Laboratory Test</strong> box as shown in the image below. <strong>Laboratory Test Codes</strong> will pop up.  Search for required laboratory test codes here.</p>
+            <blockquote>
+            <p><strong>NOTE:</strong> <em>Details in this page are not relevant as it is shown just for demonstration purposes.</em></p>
+            </blockquote>
+            <p><img src="./images/CreateNew/TestCodes.jpg" /> </p>
+            <p>Dropdown at the right end of this section, shows different tests associated with the test code that has been selected. This example of Blood Sugar has just one selection.</p>
+            <p><img src="./images/CreateNew/Dropdown.jpg" /> </p>
+            <p>Any selection can be easily removed by pressing on that test and selecting <strong>ERASE.</strong> Here, by pressing <strong>Blood Sugar (1hrs.PP),</strong> same window for Code Search appears. Now click on <strong>ERASE</strong> to remove that selection.</p>
+            <p><img src="./images/CreateNew/Erase.jpg" /> </p>
+            <p>Procedure order created will be stored in <strong>QUICK ORDER</strong> tab on <a href="0_PatientPage.htm"><strong>Patient Page.</strong></a></p>
+            
+    </div>
+
+    <div id="patientPage">
+            <p id="backToTop"><a href="#tableOfContent">Back to Top</a></p>
+            <h3>Patient Page</h3>
+            <p>
+              <em>An example of
+                <strong>sn</strong> has been shown in the image below which skips the lists view and opens
+                <strong>Ms. Sneha Prasai</strong> Patient Page.</em>
+            </p>
+          
+            <div id="Demographics">
+              <p><strong>DEMOGRAPHICS:</strong> This page displays details of the patient. Scroll down and click
+                <strong>Edit</strong> to update any changes if needed.</p>
+              <p>Click on Active Patient to show and hide the tab. The Active patient tab below shows all the patient who has been asked to wait by the front office. Click on the view patient to navigate back to the Patient Page (the screen is shown below), click remove patient to remove from the active list and click clear list to clear all patient from the active list.</p>
+              <blockquote>
+                <p>Please note that to add the patient on the <strong>Active List</strong>, click on the icon as shown in the image below.</p>
+              </blockquote>
+            
+              <p><img src="./images/PatientPage/Demographics.jpg" /></p>  
+            </div>
+          
+            <div id="Appointment">
+              <p>
+                <strong>APPOINTMENT:</strong> If there are any appointments of that patient, it will be displayed here.</p>
+              <p>If you want to create a new appointment then go to,
+                <a href="./1_CreatingAppointment.htm">Creating New Appointment.</a>
+              </p>
+              <blockquote>
+                <p><strong>NOTE:</strong> Appointment cannot be delete if the payment has been done. So, <strong>Delete </strong> button will be available only if the payment has not been done.</p>
+              </blockquote>
+              <p><img src="./images/PatientPage/Appointment.jpg" /></p>
+              <p>Editing appointment is simple as creating a new one. Simply fill up the form, find another available date and press save. User can also print the appointment for future references.</p>
+              <p><img src="./images/PatientPage/EditAppointment.jpg" /></p>
+            </div>
+          
+            <div id="quick-order">
+              <p>
+                <strong>QUICK ORDER:</strong> Displays procedure order of the patient (if any found). To make a new procedure order go to
+                <a
+                  href="1_CreateProcedureOrder.htm">Create Procedure Order.</a>
+              </p>
+              <blockquote>
+                <p><strong>NOTE: </strong>If the payment has been done then <strong>Delete </strong> option will not be available.
+                </p>
+              </blockquote>
+              <p>
+                <img src="./images/PatientPage/QuickOrder.jpg" /> </p>
+            </div>
+          
+            <div id="card-label">
+              <p>
+                <strong>CARD/LABEL:</strong> This contains information about the hospital and the patient. The label can be adjusted according to the desired size and printed. The Card size is fixed. Please note that
+                <strong>Card ID</strong> will be left blank until card for that patient is issued as in the image below.</p>
+              <blockquote>
+                <p>
+                  <strong>NOTE:</strong> Database information is transferred to the patient's card. Any information's previously stored in
+                  the card will be removed and overwritten by the information stored in the database.</p>
+              </blockquote>
+              <p>
+                <img src="./images/HomeScreen/CardLabel.jpg" /> </p>
+            </div>
+          
+            <div id="billing">
+              <p>
+                <strong>Billing:</strong> All the charges will be listed here in the form of encounters. Encounters are the history of the
+                patient visits. In the list of
+                <strong>Encounter</strong> all the bold encounters mean that payment has not been made by the patient whereas the normal font
+                encounters means that payment has been cleared.</p>
+              <p>
+                <img src="./images/PatientPage/PaymentEncounter.jpg" /> </p>
+                <blockquote>
+                  <p>
+                    <strong>NOTE:</strong> In case of
+                    <strong>tax amount difference</strong> for different items, bill must be paid separately for different taxable amount. </p>
+                </blockquote>
+                <p><img src="./images/PatientPage/taxDifference.jpg" alt=""></p>
+                <p></p>
+              <ul>
+                <li>In addition, any extra items can be added by filling the add item field and pressing
+                  <strong>Add Item</strong>.</li>
+              </ul>
+              <p><img src="./images/PatientPage/Billing.jpg" /></p>
+              <p>If there is a price difference, then pressing <strong>Pay </strong> will display the following page.</p>
+              <p><img src="./images/PatientPage/PriceDifference.jpg" alt=""></p>
+              <ul>
+                <li>Proceed with the payment by clicking on
+                  <strong>Pay.</strong> Discounts and comments can be given here.</li>
+                <li>The comments are categorized as
+                  <strong>Private</strong> or
+                  <strong>Public.</strong> Public comment will be visible on the print out whereas private comments will not be included in
+                  the print outs.</li>
+                <li>
+                  <strong>Payment Method</strong> can be selected depending upon the patients request. Patients VAT or PAN number can also be included in the receipt.</li>
+              </ul>
+              <p>
+                <img src="./images/PatientPage/Pay.jpg" /> </p>
+            </div>
+          
+            <div id="invoice">
+              <p>
+                <strong>INVOICE:</strong> After hitting the
+                <strong>Pay</strong> button above, invoice is generated. Invoice can be reprinted to present it to the patients. Just right
+                click on the invoice and select the item that you want to view.</p>
+              <p>
+                <img src="./images/PatientPage/Invoice.jpg" /> </p>
+              <ul>
+                <li>The reprint can be made by selecting
+                  <strong>View Items</strong> and pressing <strong>Reprint</strong>.
+                     This copy will be printed with label of <em>Copy of Original</em> and number of copies that has been printed.
+                  Similarly, refunds can also be viewed from <strong>View Refunds</strong>.</li>
+              </ul>
+              <p>
+                <img src="./images/PatientPage/ReprintingInvoice.jpg" /> </p>
+            </div>
+          
+            <div id="refund">
+              <p>
+                <strong>REFUND:</strong> Make a note of the invoice id from the invoice page above. And enter that invoice id in the
+                <strong>Invoice Id.</strong>
+              </p>
+              <p>
+                <img src="./images/PatientPage/Refund.jpg" /> </p>
+              <ul>
+                <li>The image below shows an example of
+                  <strong>Invoice Id</strong> 22.</li>
+                <li>Double click on the
+                  <strong>Return Qty.</strong> Please make sure to add the right quantity in this section.
+                </li>
+              </ul>
+              <p>
+                <img src="./images/PatientPage/EnterQuantity.jpg" /> </p>
+              <p>
+                <img src="./images/PatientPage/InvoiceId.jpg" /> </p>
+            </div>
+          
+    </div>
+
+    <div id="searchPatient">
+            <p id="backToTop"><a href="#tableOfContent">Back to Top</a></p>
+    
+        <h3>Search Patients</h3>
+        <ul>
+            <li>Find
+            <strong>Search Patient...</strong> bar on the top of the screen and enter few keywords that match with the patient name or type full External ID of that patient and press enter or click on the search icon to see the list of registered patients.
+            </li>
+            <li>If only the initial of the patient is typed in the search bar then, the list matching that initial will be displayed
+            as in the image below.</li>
+        </ul>
+        <p>
+            <img src="./images/HomeScreen/SearchMatchingPatients.jpg" /> </p>
+            <blockquote>
+            <p><strong>NOTE:</strong> Hover over the titles to see a helper tooltip. Titles are the name, sex, phone, etc.</p>
+            </blockquote>
+        <p>
+            <img src="./images/HomeScreen/SearchPage.jpg" /> </p>
+        <ul>
+            <li>5 out of 13 patients are shown in the first page above. Go to next pages to find patient you are looking for. </li>
+            <li>Select the patient and perform the required task from the patient's page. </li>
+        </ul>
+        <blockquote>
+            <p>
+            <strong>NOTE:</strong>
+            <em>If only one matching patient is found then the list view of the patients will be skipped and
+                <a href="0_PatientPage.htm">
+                <strong>Patient Page</strong>
+                </a> of the matching patient will be displayed.</em>
+            </p>
+        </blockquote>
+
+    </div>
+
+    <div id="checkInOut">
+            <p id="backToTop"><a href="#tableOfContent">Back to Top</a></p>
+        <h4>Patient's Check-In</h4>
+        <ul>
+            <li>NFC card is provided to every patient and he/she should provide it to the front desk to check In/Out. This is
+                done to keep record of the patient's visit.</li>
+            <li>Patient's External ID can be used to Check In.</li>
+            <li>Each patient are provided with a unique barcode. This can also be used to check in or check out.</li>
+        </ul>
+        <blockquote>
+            <p>
+                <strong>Note:</strong>
+                <em>Please note that patient cannot check-in 60 min before his/her appointment time.</em>
+            </p>
+        </blockquote>
+        <p>
+            <img src="./images/CheckInAndOut/CheckIn.jpg" /> </p>
+        <h4>Patient's Check-Out</h4>
+        <ul>
+            <li>Similarly, patient need to check out from the system at the end of his/her visit.</li>
+            <li>Patient's External ID can also be used to Check Out.</li>
+        </ul>
+        <p>
+            <img src="./images/CheckInAndOut/CheckOut.jpg" /> </p>
+        <blockquote>
+            <p>
+                <strong>NOTE:</strong>
+                <em>While using bar code scanner make sure to click on the text field (where External Id is shown above) and
+                    scan the bar code of that patient to auto check-in or check-out.</em>
+            </p>
+        </blockquote>
+
+    </div>
+
+    <div id="cash">
+            <p id="backToTop"><a href="#tableOfContent">Back to Top</a></p>
+        <h3>Billing</h3>
+        <p>
+            <img src="./images/billing.jpg" /> </p>
+        <h4>Cash Register</h4>
+        <ul>
+            <li>Cash register contains records of cash details in the account of specified user/provider between certain period.
+            </li>
+            <li>
+                <p>Here, the recorded amount of Pankaj Awale has been shown in the image below. This example shows miscalculations
+                    of Pankaj Awale. Notice the
+                    <strong>Shortfall</strong> at the end of
+                    <strong>Type</strong> column. This is the case where the amounts do not matche with the amount deposited in and
+                    withdrawn out from the till by the user/provider.</p>
+                <p>
+                    <img src="./images/CreateNew/RegisterHistory.jpg" /> </p>
+                <blockquote>
+                    <p>
+                        <strong>NOTE:</strong>
+                        <em>Special care should be taken while entering the amounts in the billing section.</em>
+                    </p>
+                </blockquote>
+            </li>
+            <li>
+                <p>The
+                    <strong>+/-</strong> button leads to a page where selection of the user/provider along with the type of amount
+                    recorded can be viewed and updated.</p>
+                <p>
+                    <img src="./images/cashRegister.jpg" /> </p>
+                <p>
+                    <img src="./images/providerAndType-CashResister.jpg" /> </p>
+            </li>
+            <li>
+                <p>Date is selected to record data in the cash register's history. </p>
+            </li>
+            <li>The
+                <strong>Provider</strong> shows the list of users for identification.</li>
+            <li>
+                The
+                <strong>Type</strong> contains,
+                <ul>
+                    <li>
+                        <em>Closing Amount</em>: The remaining amount in the till at the user's end shift.</li>
+                    <li>
+                        <em>Collection</em>: The amount collected from the till by the authorized person.</li>
+                    <li>
+                        <em>Initial Amount</em>: The amount in the till at the beginning of the shift.</li>
+                </ul>
+            </li>
+        </ul>
+        <blockquote>
+            <p>NOTE:
+                <em>The
+                    <strong>Cash Register</strong> stores history of the till i.e. starting amount, closing amount and collected
+                    amount. It also lists refunded amounts and shortfalls. Shortfall is the difference in amount in the till
+                    that does not matches with the amount from the system's report.</em>
+            </p>
+        </blockquote>
+        <h4>Day Book</h4>
+        <ul>
+            <li>The Day Book records all the transactions that took place in that day.</li>
+            <li>
+                Select the required time frame and the name of the User (Provider) to see the records.
+                <ul>
+                    <li>The table lists the type of amount as
+                        <strong>In</strong> and
+                        <strong>out.</strong>
+                        <strong>In</strong> indicate cash that came in and
+                        <strong>Out</strong> indicate amount that went out from the till (refunds most likely).</li>
+                </ul>
+            </li>
+            <li>
+                <p>The
+                    <strong>Print</strong> option on the top right can be used to print the list. This list also can be exported in
+                    Excel format by pressing
+                    <strong>CSV Export</strong>. CSV stands for Comma Separated Values. </p>
+                <p>
+                    <img src="./images/daybook.JPG" /> </p>
+            </li>
+        </ul>
+        <h4>Cash Collection</h4>
+        <ul>
+            <li>Cash collection keeps records of cash collected by the provider/user.</li>
+            <li>The
+                <strong>Print</strong> option on the top right can be use to print the list. It can also be exported in Excel format
+                by pressing **CSV Export&quot;, CSV stands for Comma Separated Values. </li>
+        </ul>
+        <h4>Price Check</h4>
+        <ul>
+            <li>
+                <p>This section allows user to check prices for different tests and other items (like appointment price for
+                    different doctors or price of different tests) that a patient can perform in the hospital. These prices
+                    can be printed or exported in Excel format by pressing Export CSV.</p>
+                <p>
+                    <img src="./images/CreateNew/PriceCheck.jpg" /> </p>
+            </li>
+        </ul>
+
+    </div>
+
+    <div id="acl">
+            <p id="backToTop"><a href="#tableOfContent">Back to Top</a></p>
+       
+        <h4>Managing ACL - Access Control List</h4>
+        <blockquote>
+            <p>Access Control List (ACL) is the list of Access Control Entries (ACE). Each ACE in an ACL identifies users that are authorized
+            or unauthorized and grants access or restrict access depending on the status of the user.</p>
+        </blockquote>
+        <p><img src="./images/ACL.jpg" alt=""></p>
+        <ul>
+            <li>Only the Admin account holder can give access to a given user for security purposes.</li>
+            <li>In the image below all the access is given to the Administrator so all the fields on the
+            <strong>Available</strong> section are placed in the
+            <strong>Selected</strong> section. Multiple item can be chosen from the available options at once and can be moved to the Selected
+            section and vice-versa, if any access is to be given to other users by the administrator.</li>
+        </ul>
+        <blockquote>
+            <p>
+            <strong>NOTE:</strong>
+            <em>The
+                <strong>double arrows</strong> sends all the items to the respective side, selection is not required here, so be careful while using it. Whereas
+                <strong>single arrows</strong> sends the selected item to the corresponding side.</em>
+            </p>
+        </blockquote>
+        <p>
+            <img src="./images/adminACL.jpg" /> </p>
+        <h4>NOTE: This page can only be accessed and modified by the Administrator.</h4>
+        <p>Below an example shows a Physicians is being given access to few of the facilities that he/she may require.</p>
+        <p>
+            <img src="./images/ACE.jpg" /> </p>
+        <h3>Access Control Entries(ACE) details:</h3>
+        <ol>
+            <li>
+            <p>
+                <strong>Accounting-&gt;billing(read/write):</strong> allows read and write permission of the patients billing.</p>
+            <ul>
+                <li>
+                <strong>Read</strong>
+                <ul>
+                    <li>Access to billing tab option on the Patient Page.</li>
+                    <li>Encounter selection available for user to view charges on encounters.</li>
+                    <li>Won't have access to Add item and Pay.</li>
+                </ul>
+                </li>
+                <li>
+                <strong>Write</strong>
+                <ul>
+                    <li>Access to billing tab option on the Patient Page.</li>
+                    <li>Encounter selection available for user to view the total bill amount but access to itemized view restricted.</li>
+                </ul>
+                </li>
+            </ul>
+            </li>
+            <li>
+            <p>
+                <strong>Accounting-&gt;invoice(read):</strong> Access to
+                <em>Invoice</em> tab on the Patient Page.</p>
+            </li>
+            <li>
+            <p>
+                <strong>Accounting-&gt;refund(read/write):</strong> allows read and write permission for refunds to the patients. </p>
+            <ul>
+                <li>
+                <strong>Read</strong>
+                <ul>
+                    <li>Access to
+                    <em>REFUND</em> tab.</li>
+                    <li>Search made for invoices by their invoice number restrict refund facility, only the refund list will be displayed.</li>
+                </ul>
+                </li>
+                <li>
+                <strong>Write</strong>
+                <ul>
+                    <li>Access to
+                    <em>REFUND</em> tab.</li>
+                    <li>Full access to refund facility.</li>
+                </ul>
+                </li>
+            </ul>
+            </li>
+            <li>
+            <p>
+                <strong>Administration-&gt;Setting(read/write):</strong> allows setting to be read or modified as needed.</p>
+            <ul>
+                <li>
+                <strong>Read</strong>
+                <ul>
+                    <li>Access to
+                    <em>SETTING</em> option but restricts editing.</li>
+                </ul>
+                </li>
+                <li>
+                <strong>Write</strong>
+                <ul>
+                    <li>Full access to
+                    <em>SETTING</em> option.</li>
+                </ul>
+                </li>
+            </ul>
+            </li>
+            <li>
+            <p>
+                <strong>Home-&gt;Home(read/write):</strong> allows read and write permission access to the home page.</p>
+            <ul>
+                <li>
+                <strong>Read</strong>
+                <ul>
+                    <li>Right click disabled for changing
+                    <em>status</em> and
+                    <em>room</em>.</li>
+                </ul>
+                </li>
+                <li>
+                <strong>Write</strong>
+                <ul>
+                    <li>Right click enabled for editing
+                    <em>status</em> and
+                    <em>room</em>.</li>
+                </ul>
+                </li>
+            </ul>
+            </li>
+            <li>
+            <p>
+                <strong>Patients-&gt;Appointment(read/write):</strong> allows read and write permission access to patient's appointments.</p>
+            <ul>
+                <li>
+                <strong>Read</strong>
+                <ul>
+                    <li>Access to
+                    <em>APPOINTMENT</em> tab but restricts editing, printing and delete options.</li>
+                </ul>
+                </li>
+                <li>
+                <strong>Write</strong>
+                <ul>
+                    <li>Full access to
+                    <em>APPPOINTMENT</em> tab.</li>
+                </ul>
+                </li>
+            </ul>
+            </li>
+            <li>
+            <p>
+                <strong>Patient-&gt;card(read/write):</strong> allows read and write permission to the NFC card.</p>
+            <ul>
+                <li>
+                <strong>Read</strong>
+                <ul>
+                    <li>Overwrite is disabled.</li>
+                </ul>
+                </li>
+                <li>
+                <strong>Write</strong>
+                <ul>
+                    <li>Overwrite is enabled.</li>
+                </ul>
+                </li>
+            </ul>
+            </li>
+            <li>
+            <p>
+                <strong>Patient-&gt;check-in(read/write):</strong> allows read and write permission to check in patients.</p>
+            <ul>
+                <li>
+                <strong>Read</strong>
+                <ul>
+                    <li>Restricts* External Id* check in, only patient card (NFC) can be used to check in.
+                    </li>
+                </ul>
+                </li>
+                <li>
+                <strong>Write</strong>
+                <ul>
+                    <li>Access to check in with both NFC card and
+                    <em>External ID</em>
+                    </li>
+                </ul>
+                </li>
+            </ul>
+            </li>
+            <li>
+            <p>
+                <strong>Patients-&gt;check-out(read/write):</strong> allows read and write permission to check out the patients.</p>
+            <ul>
+                <li>
+                <strong>Read</strong>
+                <ul>
+                    <li>Restricts* External Id* check in, only patient card (NFC) can be used to check in.
+                    </li>
+                </ul>
+                </li>
+                <li>
+                <strong>Write</strong>
+                <ul>
+                    <li>Access to check in with both NFC card and
+                    <em>External ID</em>
+                    </li>
+                </ul>
+                </li>
+            </ul>
+            </li>
+            <li>
+            <p>
+                <strong>Patient-&gt;Demographics(read/write):</strong> allows read and write permission to the records of the registered
+                patients.
+            </p>
+            <ul>
+                <li>
+                <strong>Read</strong>
+                <ul>
+                    <li>Restricts access to
+                    <em>Create Patent</em>.</li>
+                    <li>Restricts access to editing option on the
+                    <em>Demographics</em> tab on the Patient Page.</li>
+                </ul>
+                </li>
+                <li>
+                <strong>Write</strong>
+                <ul>
+                    <li>Full access to creating patient and editing
+                    <em>Demographics</em> can be done.</li>
+                </ul>
+                </li>
+            </ul>
+            </li>
+            <li>
+            <p>
+                <strong>Report-&gt;Cash Register(read/write): </strong>allows read and write permission to generate transactions reports.</p>
+            <ul>
+                <li>
+                <strong>Read</strong>
+                <ul>
+                    <li>Access to view cash details of logged in users.</li>
+                </ul>
+                </li>
+                <li>
+                <strong>Write</strong>
+                <ul>
+                    <li>Access to view cash details of logged in users.</li>
+                </ul>
+                </li>
+            </ul>
+            </li>
+            <li>
+            <p>
+                <strong>Report-&gt;Cash register All Users(read/write):</strong> allows read and write permission to generate transaction
+                of all records.</p>
+            <ul>
+                <li>
+                <strong>Read</strong>
+                <ul>
+                    <li>Access to
+                    <strong>+/-</strong> is restricted. </li>
+                </ul>
+                </li>
+                <li>
+                <strong>Write</strong>
+                <ul>
+                    <li>Access to
+                    <strong>+/-</strong> functionality.</li>
+                </ul>
+                </li>
+            </ul>
+            </li>
+            <li>
+            <p>
+                <strong>Report-&gt;Collection(read/write):</strong> allows to read or keep records of collected transactions.</p>
+            <ul>
+                <li>
+                <strong>Read</strong>
+                <ul>
+                    <li>Access to cash collection on billing.</li>
+                </ul>
+                </li>
+                <li>
+                <strong>Write</strong>
+                <ul>
+                    <li>Access to cash collection on billing.</li>
+                </ul>
+                </li>
+            </ul>
+            </li>
+            <li>
+            <p>
+                <strong>Report-&gt;Daybook(read/write):</strong> allows read and write permission to day book records of transactions. </p>
+            <ul>
+                <li>
+                <strong>Read</strong>
+                <ul>
+                    <li>Access to day book on Billing.</li>
+                </ul>
+                </li>
+                <li>
+                <strong>Write</strong>
+                <ul>
+                    <li>Access to day book on Billing.</li>
+                </ul>
+                </li>
+            </ul>
+            </li>
+            <li>
+            <p>
+                <strong>Report-&gt;Daybook All Users(read/write):</strong> allows read and write permission to the day book records of all
+                active users.</p>
+            <ul>
+                <li>
+                <strong>Read</strong>
+                <ul>
+                    <li>Full access to Daybook.</li>
+                </ul>
+                </li>
+                <li>
+                <strong>Write</strong>
+                <ul>
+                    <li>Full access to Daybook.</li>
+                </ul>
+                </li>
+            </ul>
+            </li>
+            <li>
+            <p>
+                <strong>Report-&gt;Print and Export Price(read):</strong> allows permission to print and export price.</p>
+            <ul>
+                <li>
+                <strong>Read</strong>
+                <ul>
+                    <li>Access to view, print and export price list.</li>
+                </ul>
+                </li>
+            </ul>
+            </li>
+            <li>
+            <p>
+                <strong>Role-&gt;ACL(read/write):</strong> allows to read or manage the Access Control Lists to the specified users.</p>
+            <ul>
+                <li>
+                <strong>Read</strong>
+                <ul>
+                    <li>Access allowed for view only.</li>
+                </ul>
+                </li>
+                <li>
+                <strong>Write</strong>
+                <ul>
+                    <li>Access permitted for assigning Access Control Entries (ACE) to different users. </li>
+                </ul>
+                </li>
+            </ul>
+            </li>
+        </ol>
+
+    </div>
+
+    <div id="Settings">
+        <h4>DMS Configuration</h4>
+        <p>DMS
+            <strong>Settings</strong> is the configuration of the URL, Company details, Patient Card Message and Printer Options as
+            shown in the image below. These can be edited by updating the content and pressing
+            <strong>Set</strong> button. You can simply press
+            <strong>Cancel</strong> if no changes are required. </p>
+        <p>
+            <img src="./images/settings.jpg" />
+        </p>
+        <ul>
+            <li>
+                <p>Printer Options:</p>
+                <ul>
+                    <li>
+                        <strong>Invoice Bill:</strong> Select your printer and then the size of the print-out that is required.</li>
+                    <li>
+                        <strong>Label:</strong> This contains Hospitals and Patients information. View it
+                        <a href="./0_PatientPage.htm">here</a> in the Patient Page for more info. </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+
+</body>
+
+</html>
+<!-- This document was created with MarkdownPad, the Markdown editor for Windows (http://markdownpad.com) -->

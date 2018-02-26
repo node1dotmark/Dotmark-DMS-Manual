@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>DMS Pharmacy Manual</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <style type="text/css">
+    /* GitHub stylesheet for MarkdownPad (http://markdownpad.com) */
+
+    /* Author: Nicolas Hery - http://nicolashery.com */
+
+    /* Version: b13fe65ca28d2e568c6ed5d7f06581183df8f2ff */
+
+    /* Source: https://github.com/nicolahery/markdownpad-github */
+
+    /* RESET
+=============================================================================*/
+
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+    }
+
+    /* BODY
+=============================================================================*/
+
+    body {
+      font-family: Helvetica, arial, freesans, clean, sans-serif;
+      font-size: 14px;
+      line-height: 1.6;
+      color: #333;
+      background-color: #fff;
+      padding: 20px;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    body>*:first-child {
+      margin-top: 0 !important;
+    }
+
+    body>*:last-child {
+      margin-bottom: 0 !important;
+    }
+
+    /* BLOCKS
+=============================================================================*/
+
+    p,
+    blockquote,
+    ul,
+    ol,
+    dl,
+    table,
+    pre {
+      margin: 15px 0;
+    }
+
+    /* HEADERS
+=============================================================================*/
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 20px 0 10px;
+      padding: 0;
+      font-weight: bold;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1 tt,
+    h1 code,
+    h2 tt,
+    h2 code,
+    h3 tt,
+    h3 code,
+    h4 tt,
+    h4 code,
+    h5 tt,
+    h5 code,
+    h6 tt,
+    h6 code {
+      font-size: inherit;
+    }
+
+    h1 {
+      font-size: 28px;
+      color: #000;
+    }
+
+    h2 {
+      font-size: 24px;
+      border-bottom: 1px solid #ccc;
+      color: #000;
+    }
+
+    h3 {
+      font-size: 18px;
+    }
+
+    h4 {
+      font-size: 16px;
+    }
+
+    h5 {
+      font-size: 14px;
+    }
+
+    h6 {
+      color: #777;
+      font-size: 14px;
+    }
+
+    body>h2:first-child,
+    body>h1:first-child,
+    body>h1:first-child+h2,
+    body>h3:first-child,
+    body>h4:first-child,
+    body>h5:first-child,
+    body>h6:first-child {
+      margin-top: 0;
+      padding-top: 0;
+    }
+
+    a:first-child h1,
+    a:first-child h2,
+    a:first-child h3,
+    a:first-child h4,
+    a:first-child h5,
+    a:first-child h6 {
+      margin-top: 0;
+      padding-top: 0;
+    }
+
+    h1+p,
+    h2+p,
+    h3+p,
+    h4+p,
+    h5+p,
+    h6+p {
+      margin-top: 10px;
+    }
+
+    /* LINKS
+=============================================================================*/
+
+    a {
+      color: #4183C4;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: none;
+      color: rgb(65, 160, 27);
+    }
+
+    /* LISTS
+=============================================================================*/
+
+    ul,
+    ol {
+      padding-left: 30px;
+    }
+
+    ul li> :first-child,
+    ol li> :first-child,
+    ul li ul:first-of-type,
+    ol li ol:first-of-type,
+    ul li ol:first-of-type,
+    ol li ul:first-of-type {
+      margin-top: 0px;
+    }
+
+    ul ul,
+    ul ol,
+    ol ol,
+    ol ul {
+      margin-bottom: 0;
+    }
+
+    dl {
+      padding: 0;
+    }
+
+    dl dt {
+      font-size: 14px;
+      font-weight: bold;
+      font-style: italic;
+      padding: 0;
+      margin: 15px 0 5px;
+    }
+
+    dl dt:first-child {
+      padding: 0;
+    }
+
+    dl dt>:first-child {
+      margin-top: 0px;
+    }
+
+    dl dt>:last-child {
+      margin-bottom: 0px;
+    }
+
+    dl dd {
+      margin: 0 0 15px;
+      padding: 0 15px;
+    }
+
+    dl dd>:first-child {
+      margin-top: 0px;
+    }
+
+    dl dd>:last-child {
+      margin-bottom: 0px;
+    }
+
+    /* CODE
+=============================================================================*/
+
+    pre,
+    code,
+    tt {
+      font-size: 12px;
+      font-family: Consolas, "Liberation Mono", Courier, monospace;
+    }
+
+    code,
+    tt {
+      margin: 0 0px;
+      padding: 0px 0px;
+      white-space: nowrap;
+      border: 1px solid #eaeaea;
+      background-color: #f8f8f8;
+      border-radius: 3px;
+    }
+
+    pre>code {
+      margin: 0;
+      padding: 0;
+      white-space: pre;
+      border: none;
+      background: transparent;
+    }
+
+    pre {
+      background-color: #f8f8f8;
+      border: 1px solid #ccc;
+      font-size: 13px;
+      line-height: 19px;
+      overflow: auto;
+      padding: 6px 10px;
+      border-radius: 3px;
+    }
+
+    pre code,
+    pre tt {
+      background-color: transparent;
+      border: none;
+    }
+
+    kbd {
+      -moz-border-bottom-colors: none;
+      -moz-border-left-colors: none;
+      -moz-border-right-colors: none;
+      -moz-border-top-colors: none;
+      background-color: #DDDDDD;
+      background-image: linear-gradient(#F1F1F1, #DDDDDD);
+      background-repeat: repeat-x;
+      border-color: #DDDDDD #CCCCCC #CCCCCC #DDDDDD;
+      border-image: none;
+      border-radius: 2px 2px 2px 2px;
+      border-style: solid;
+      border-width: 1px;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      line-height: 10px;
+      padding: 1px 4px;
+    }
+
+    /* QUOTES
+=============================================================================*/
+
+    blockquote {
+      border-left: 4px solid #DDD;
+      padding: 0 15px;
+      color: #777;
+    }
+
+    blockquote>:first-child {
+      margin-top: 0px;
+    }
+
+    blockquote>:last-child {
+      margin-bottom: 0px;
+    }
+
+    /* HORIZONTAL RULES
+=============================================================================*/
+
+    hr {
+      clear: both;
+      margin: 15px 0;
+      height: 0px;
+      overflow: hidden;
+      border: none;
+      background: transparent;
+      border-bottom: 1px solid #ddd;
+      padding: 0;
+    }
+
+    /* TABLES
+=============================================================================*/
+
+    table th {
+      font-weight: bold;
+    }
+
+    table th,
+    table td {
+      border: 1px solid #ccc;
+      padding: 6px 13px;
+    }
+
+    table tr {
+      border-top: 1px solid #ccc;
+      background-color: #fff;
+    }
+
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8;
+    }
+
+    #heading {
+      text-align: center;
+    }
+
+    /* ol {
+  list-style: none;
+} */
+
+    .content {
+      text-align: left;
+      width: 460px;
+      margin: 0 auto;
+      padding: 10px;
+      border-top: 2px solid blue;
+      border-bottom: 2px solid blue;
+    }
+
+    .notlist {
+      list-style: none;
+    }
+
+    /* IMAGES
+=============================================================================*/
+
+    img {
+      max-width: 100%;
+
+    }
+
+  .TMlogo {
+    width: 183px;
+    height: 90px;
+  }
+  </style>
+</head>
+
+<body>
+
+  <div id="heading">
+      <img class="TMlogo" src="./logo.jpg" ALIGN="center" alt="">    
+    
+    <h1>Dotmark Medical Solutions (DMS) Pharmacy Manual</h1>
+    <p>
+      <em>"Easy, Quick and Efficient"</em>
+    </p>
+    <p>At DMS we strive to facilitate and streamline all your enterprise needs to achieve excellent care delivery and clinical
+      productivity.
+    </p>
+    <hr>
+  </div>
+
+  <div class="content">
+    <p id="content">
+      <strong>Table of contents</strong>
+    </p>
+    <hr>
+    
+    <ol>
+    <p><strong>General</strong> </p>      
+      <li><strong><a href="#introduction">Introduction</a></strong>
+            <ul class="notlist">
+              <li>1.a <strong><a href="#feedbacks">Feedbacks</a></strong></li>
+              <li>1.b<strong><a href="#eventsAndNotices">Events and Notices</a></strong></li>
+            </ul>
+      </li>
+      <li><strong><a href="#searchPatient">Searching an Existing Patient/Payments</a></strong>
+            <!-- <ul class="notlist">
+              <li>4.a <strong><a href="#encounters">Encounters</a></strong></li>
+            </ul> -->
+      </li>
+      <!-- <li><strong><a href="#createAppointment">Creating/Editing Appointments</a></strong></li> -->
+    <p><strong>Side Bar</strong></p>
+      <li><strong><a href="#dashboard">Dashboard</a></strong></li>
+      <li><strong><a href="#PatientClient">Patient/Client</a></strong></li>
+      <li><strong><a href="#inventory">Inventory</a></strong></li>
+      <li><strong><a href="#events">Events</a></strong></li>
+      <li><strong><a href="#notices">Notice</a></strong></li>
+      <li><strong><a href="#myAccount">My Account</a></strong></li>
+      <li><strong><a href="#aboutUs">About Us</a></strong></li>
+      <li><strong><a href="#logOut">Log Out</a></strong></li>
+    </ol>
+  </div>
+
+  <ol>
+<div>
+    <li id="introduction"><strong><a href="#content">Introduction</a></strong></li>
+  <p>After logging in, you will be navigated to the DMS dashboard. DMS dashboard contains tools that can be used for many purposes.
+    These all will be individually discussed in this manual.</p>
+  <p>Pharmacy can scan NFC card directly to view the patient details from this screen. NFC card won't work on other screens.</p>
+  <img src="introduction.jpg" alt="">
+
+  <br><br>
+
+  <p id="feedbacks"><strong>1.a <a href="#content" id="feedbacks">Feedbacks</a></strong></p>
+  <p>Feedbacks for improving DMS system, error reporting and additional comments can be sent. Press feedback icon on the top
+    right corner next to the Search bar and fill up the form.</p>
+  <img src="feedbackIcon.png" alt="">
+  <img src="feedbackForm.jpg" alt="">
+
+  <br><br>
+
+  <p id="eventsAndNotices"><strong>1.b <a href="#content">Events and Notices</a></strong></p>
+  <p>Upcoming events and notices can be easily added to the dashboard. On the side bar scroll down, find
+    <strong>Events</strong> and <strong>Notice</strong>. Click on them and fill up the form as required and post it on the dashboard.</p>
+  <p><strong><em>NOTE:</em></strong>
+    <em><strong>Every account holder can view this on their dashboard and could be super useful, so it should be properly utilized.</strong></em></p>
+  <p><img src="EventForm.jpg" alt=""></p>
+  <br>
+  <p><img src="NoticeForm.jpg" alt=""></p>
+  <p>These messages will be posted for certain time only.<strong>From</strong> and <strong>To</strong> indicates start date and end date respectively of that message.</p>
+
+  <br><br>
+</div>
+    
+    <div id="1Search">
+        <li id="searchPatient"><strong><a href="#content">Searching an Existing Patient/Payments</a></strong></li>
+        <p>Search patient using their patient name or an invoice id. Click on the patient to view the patient's detail as shown in the image below.</p>
+        <p><img src="searchPatient.png" alt=""></p> 
+        <p>In the image below, <strong>Check All | Clear All</strong> on top of the screen, checks all or clears all the drugs. These selected drugs can be now printed out using <strong>View Printable Version HTML</strong> button.</p>
+            <p><img src="printHTML.png" alt=""></p>
+            <p>The <strong>Order List </strong>option will display all the pending payments of the patient's prescriptions. It can also be used to add new drugs or delete drugs. In addition, payment can also be done for the pending drugs using <strong>Dispense</strong> button.</p>
+            <p><img src="orderList.png" alt=""></p>
+            <p>Press <strong>Add Drug</strong> shown in the above image to add new item on the list. Adding a drug requires user to fill in all the details regarding that drug. Press <strong>Submit</strong> when done.</p>
+            <p><img src="orderListAddDrug.png" alt=""></p>
+        <p>Click on a drug to view the following screen.</p>
+            <blockquote>
+            <p><img src="selectDrug.png" alt=""></p>
+              
+                <p><strong>NOTE: </strong>After you check the details in this section, press <strong>Save </strong>. This will make <strong>Dispense </strong>button visible. Press <strong>Dispense </strong>to proceed with the payment.</p>
+            </blockquote>
+            <p><img src="saveDispense.png" alt=""></p>
+            <p>In case, the drug is out of stock in the system then the following message will be displayed.</p>
+            <p><img src="saveError.png" alt=""></p>
+            <p>If the drug is available then press <strong>Dispense </strong>, this will navigate to the following screen, where a patient can make the payment.</p>
+            <p>Click on <strong>Save </strong>to pay. You can also add or remove drugs here.</p>
+            <p><img src="pay.png" alt=""></p>
+        
+    </div>
+
+    <br><br>
+
+    <div id="2dashboard">
+        <li id="dashboard"><strong><a href="#content">Dashboard</a></strong></li>
+        <h6>Pharmacy cannot view patient demographics page. Patient selection from <strong>Patient</strong> won't be accessible. Please only use "<strong>Search Bar</strong>" on the top of the screen to view patient's prescriptions status.</h6>
+        <ul>
+            <li>Patient</li>
+                <p>This will show list of all the patients. Please note that to view patient's details page, use <strong>Search Bar</strong>.</p>
+                <p><img src="dashboardPatient.png" alt=""></p>
+            <li>Invoice</li>
+                <ul>
+                <li>Invoice stores all the payment history of a patient. Payment is done through the <strong>Dispense</strong> section.</li>
+                <li>Invoice can be <strong>Printed </strong>or <strong>Exported as CSV</strong> from here. CSV basically means in Microsoft Excel format.</li>
+                <li>Invoice id is used in the <strong>Refund</strong>.</li>
+                <li>Select a date range and press <strong>Submit</strong> to view history of that date.</li>
+                </ul>
+                <p><img src="invoice.png" alt=""></p>
+            <li>Refund</li>
+                <p>Enter the invoice id and press <strong>Submit </strong> to proceed with the refund process for that invoice.</p>
+                <p>Make sure to enter correct return quantity and amount that needs to be refunded.</p>
+                <p>Select the <strong>Payment Method </strong> and press <strong>Refund </strong>.</p>
+                <p><img src="refund.png" alt=""></p>
+            <li>Dispense</li>
+                <p>This section is used for third party patients who may visit the pharmacy to buy their required medication. This section should not be used for I.P.D or O.P.D patients.</p>
+            <li>IPD Patient</li>
+            <p>This will show the user the list of all the patient prescriptions assigned by the <strong>Cardex department</strong>. Select the required patient and follow the same steps for the payment discussed in <strong>Search an Existing Patient/Payments</strong>.</p>
+                
+        </ul>
+    </div>
+
+    <br><br>
+
+    <div id="3patientClient">
+            <li id="PatientClient"><strong><a href="#content">Patient/Client</a></strong></li>
+            <ul>
+                <li>Patient: This will show list of all patients. Please note that to view patient's details page, use <strong>Search Bar</strong>.</li>
+                <li>Patient Education: Search any information on the web from here.</li>
+            </ul>
+                <p><img src="patientEducation.jpg" alt=""></p>
+            <ul>
+                <li>Chart Tracker</li>
+                <p>Track patients with this function. Enter the
+                        <strong>Patient ID</strong> to view the information.</p>
+            </ul>
+    </div>
+    
+    <br><br>
+        
+    <div id="4inventory">
+        <li id="inventory"><strong><a href="#content">Inventory</a></strong></li>
+        <h6>Inventory contains all the information regarding drugs that the pharmacy owns. All the new arrived or damaged drugs should be updated here. This will keep track of all the items and keeps user notified about the item's status like out-of-stock or about to finish or other.</h6>
+        <ul>
+            <li>Management</li>
+                <p>This section updates the inventory of the pharmacy. All the drug details can be added and edited here.</p>
+                <p><img src="management.png" alt=""></p>
+                <p>Click on <strong>Add Drug </strong>to enter new drug items. This will navigate to a drug details form. Fill up the form correctly with all the necessary details and press save to create a new entry on the system.</p>
+            <li>Destroyed</li>
+                <p>Drugs that are expired/damaged can be listed here through the <strong>Management </strong>section. Click on the <strong>Lot </strong> number for that drug as shown in the image below and click <strong>Destroy</strong> to move item to the Destroyed section.</p>
+                <p><img src="lot.png" alt=""></p>
+                <p><img src="destroyDrug.png" alt=""></p>
+            <li>Transaction</li>
+                <p>Transaction stores all the reports regarding drugs usages. Click on a desired report type and a date range to view the transaction history of that type.</p>
+                <p><img src="transaction.png" alt=""></p>
+                <p>Transction can also be printed out. Just click on the <strong>Print </strong> button.</p>
+                <p><img src="printTransction.png" alt=""></p>
+        </ul>
+    </div>
+
+    <br><br>
+
+    <li  id="events"><strong><a href="#content">Events</strong></a></li>
+
+    <br><br>
+
+  <p>This topic is described in <strong>General </strong>section
+    <strong>1b</strong>.</p>
+
+<br><br>    
+
+  <li  id="notices"><strong><a href="#content">Notice</strong></a></li>
+  <p>This topic is described in
+    <strong>General </strong>section
+    <strong>1b</strong>.</p>
+
+<br><br>
+    
+  <li  id="myAccount"><strong><a href="#content">My Account</strong></a></li>
+      <p><strong><em>Password: </em></strong>Change your password here.</p>
+        <p><img src="password.png" alt=""></p>
+      <p><strong> Authorizations:</strong></p>
+      <p><strong> Address Book: </strong>Most of the details of different departments in the hospital will be stored here.</p>
+      <p><strong> Office Notes: </strong>Any users can add notes here. These notes will be stored here, and anyone can come here and view
+        these notes.</p>
+      <p>
+        <strong> Configure Tracks: </strong>Doctors update this section to keep records of varieties of tests like blood pressure test
+        in different timings, its normal state for person of certain type and other in-depth details for other members to view.
+        These records will be stored in the encounter history. Accessing this information from the
+        <strong>Encounters</strong>, graph of that record will be displayed. This graph also can be printed if required.</p>
+
+<br><br>
+    
+  <li  id="aboutUs"><strong><a href="#content">About Us</a></strong></li>
+  <p>Provides information about DMS.</p>
+  <p></p>
+  <li  id="logOut"><strong><a href="#content">Log Out</strong></a></li>
+  <p>This will end your session and will redirect you to the login page.</p>
+
+  </ol>
+
+  
+  </body>
+
+  </html>

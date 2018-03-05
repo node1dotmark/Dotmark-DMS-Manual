@@ -493,7 +493,6 @@
       <li><strong><a href="#notices">Notice</a></strong></li>
       <li><strong><a href="#myAccount">My Account</a></strong></li>
       <li><strong><a href="#aboutUs">About Us</a></strong></li>
-      <li><strong><a href="#logOut">Log Out</a></strong></li>
     </ol>
   </div>
 
@@ -541,18 +540,15 @@
             <p><img src="orderList.png" alt=""></p>
             <p>Press <strong>Add Drug</strong> shown in the above image to add new item on the list. Adding a drug requires user to fill in all the details regarding that drug. Press <strong>Submit</strong> when done.</p>
             <p><img src="orderListAddDrug.png" alt=""></p>
-        <p>Click on a drug to view the following screen.</p>
-            <blockquote>
+        <p>The image below shows the list of drugs that has been prescribed to the patient. Click on a drug to proceed with the payment.</p>
             <p><img src="selectDrug.png" alt=""></p>
-              
-                <p><strong>NOTE: </strong>After you check the details in this section, press <strong>Save </strong>. This will make <strong>Dispense </strong>button visible. Press <strong>Dispense </strong>to proceed with the payment.</p>
-            </blockquote>
-            <p><img src="saveDispense.png" alt=""></p>
-            <p>In case, the drug is out of stock in the system then the following message will be displayed.</p>
-            <p><img src="saveError.png" alt=""></p>
-            <p>If the drug is available then press <strong>Dispense </strong>, this will navigate to the following screen, where a patient can make the payment.</p>
-            <p>Click on <strong>Save </strong>to pay. You can also add or remove drugs here.</p>
-            <p><img src="pay.png" alt=""></p>
+        <p>Clicking on <strong>Save </strong>will deduct the quantity of sold drugs from the inventory. Press <strong>Dispence</strong> to proceed with the payment.</p>
+            <p><img src="saveDispense.jpg" alt=""></p>
+        <p>In case, the drug is out of stock in the system then the following message will be displayed. This message will be different for different situations which will be clearly described in the red marking as shown below.</p>
+            <p><img src="saveError.jpg" alt=""></p>
+        <p>If the drug is available then press <strong>Dispense </strong>, this will navigate to the following screen, where a patient can make the payment.</p>
+        <p>Click on <strong>Pay </strong>. You can also remove drugs from here. Check on the the drug that you want to remove and click <strong>Delete Drug </strong>.</p>
+            <p><img src="pay.jpg" alt=""></p>
         
     </div>
 
@@ -610,15 +606,22 @@
         <ul>
             <li>Management</li>
                 <p>This section updates the inventory of the pharmacy. All the drug details can be added and edited here.</p>
-                <p><img src="management.png" alt=""></p>
-                <p>Click on <strong>Add Drug </strong>to enter new drug items. This will navigate to a drug details form. Fill up the form correctly with all the necessary details and press save to create a new entry on the system.</p>
+                <p>Type a drug name in the search bar and click <strong>Search </strong> to view the list of related drugs.</p>
+                  <p><img src="management.png" alt=""></p>
+                <p>Click on the <strong>Lot </strong> number as shown in the image above and click <strong>Destroy</strong> to move that item in the <strong>Destroyed </strong> section.</p>
+                  <p><img src="destroyDrug.jpg" alt=""></p>
+                <p>Click on <strong>Add Drug </strong>is used to add new drug in the list of items. This will navigate to a drug details form. Fill up the form correctly with all the necessary details and press save to create a new entry on the system.</p>
+                  <p><img src="addDrug.jpg" alt=""></p>
             <li>Destroyed</li>
-                <p>Drugs that are expired/damaged can be listed here through the <strong>Management </strong>section. Click on the <strong>Lot </strong> number for that drug as shown in the image below and click <strong>Destroy</strong> to move item to the Destroyed section.</p>
-                <p><img src="lot.png" alt=""></p>
-                <p><img src="destroyDrug.png" alt=""></p>
+                <p>Select a time range and click <strong>Submit </strong> to view drugs that has been sent to the destroyed list.</p>
+                <p>Drugs are sent here, from the <strong>Management </strong>section as explained above.</p>
+                <p>All the expired or damaged drugs will be listed here.</p>
+                  <p><img src="destroyedDrug.jpg" alt=""></p>
+                <p>Click on <strong>Lot</strong> number, in the above image, to add full description on how the drug ended here.</p>
+                <p><img src="detailsOfDestroyed.jpg" alt=""></p>
             <li>Transaction</li>
                 <p>Transaction stores all the reports regarding drugs usages. Click on a desired report type and a date range to view the transaction history of that type.</p>
-                <p><img src="transaction.png" alt=""></p>
+                  <p><img src="transaction.png" alt=""></p>
                 <p>Transction can also be printed out. Just click on the <strong>Print </strong> button.</p>
                 <p><img src="printTransction.png" alt=""></p>
         </ul>
@@ -659,11 +662,8 @@
     
   <li  id="aboutUs"><strong><a href="#content">About Us</a></strong></li>
   <p>Provides information about DMS.</p>
-  <p></p>
-  <li  id="logOut"><strong><a href="#content">Log Out</strong></a></li>
-  <p>This will end your session and will redirect you to the login page.</p>
 
-  </ol>
+</ol>
 
   
   </body>

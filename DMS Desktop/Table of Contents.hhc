@@ -51,13 +51,13 @@
 			</OBJECT>
 	</UL>
 	<LI> <OBJECT type="text/sitemap">
-		<param name="Name" value="Cash">
+		<param name="Name" value="Accounts">
 		<param name="Local" value="DMS HTML NEW\Cash_image.htm">
 		<param name="ImageNumber" value="1">
 		</OBJECT>
 	<UL>
 		<LI> <OBJECT type="text/sitemap">
-			<param name="Name" value="Billing">
+			<param name="Name" value="Accounts Report">
 			<param name="Local" value="DMS HTML NEW\3_Billing.htm">
 			</OBJECT>
 	</UL>

@@ -462,7 +462,7 @@
                 <li><a href="#patientPage">Patient Page</a></li>       
                 <li><a href="#searchPatient">Search Patient</a></li>       
                 <li><a href="#checkInOut">Check In and Check Out</a></li>       
-                <li><a href="#cash">Billing</a></li>       
+                <li><a href="#accounts">Billing</a></li>       
                 <li><a href="#acl">Access Control List</a></li>       
             </strong>
         </ol>
@@ -470,7 +470,6 @@
 
     <div id="introduction">
         
-        <p id="backToTop"><a href="#tableOfContent">Back to Top</a></p> 
         <h4>Introduction</h4>       
         <h5>Open DMS and login using your username and password. This manual will be using an Admin account who has full access to
             the DMS facilities.</h5>
@@ -548,7 +547,6 @@
     </div>
 
     <div id="createPatient">
-            <p id="backToTop"><a href="#tableOfContent">Back to Top</a></p>
         <h3>Create a New Patient</h3>
         <ul>
             <li>Click on the
@@ -594,7 +592,6 @@
     </div>
 
     <div id="createAppointment">
-            <p id="backToTop"><a href="#tableOfContent">Back to Top</a></p>
         <h3>Creating a New Appointment</h3>
         <ul>
             <li>Creating new appointment can be done by clicking on the
@@ -683,7 +680,6 @@
     </div>
 
     <div id="createProcedureOrder">
-            <p id="backToTop"><a href="#tableOfContent">Back to Top</a></p>
             <h3>Create Procedure Order</h3>
             <p>Procedure Order is a series of tests of some kind that is requested to the patient by the doctor.</p>
             <ul>
@@ -727,7 +723,6 @@
     </div>
 
     <div id="patientPage">
-            <p id="backToTop"><a href="#tableOfContent">Back to Top</a></p>
             <h3>Patient Page</h3>
             <p>
               <em>An example of
@@ -863,7 +858,6 @@
     </div>
 
     <div id="searchPatient">
-            <p id="backToTop"><a href="#tableOfContent">Back to Top</a></p>
     
         <h3>Search Patients</h3>
         <ul>
@@ -897,7 +891,7 @@
     </div>
 
     <div id="checkInOut">
-            <p id="backToTop"><a href="#tableOfContent">Back to Top</a></p>
+        <h3>Check In/Out</h3>
         <h4>Patient's Check-In</h4>
         <ul>
             <li>NFC card is provided to every patient and he/she should provide it to the front desk to check In/Out. This is
@@ -930,109 +924,135 @@
 
     </div>
 
-    <div id="cash">
-            <p id="backToTop"><a href="#tableOfContent">Back to Top</a></p>
-        <h3>Billing</h3>
-        <p>
-            <img src="./images/billing.jpg" /> </p>
-        <h4>Cash Register</h4>
-        <ul>
-            <li>Cash register contains records of cash details in the account of specified user/provider between certain period.
-            </li>
-            <li>
-                <p>Here, the recorded amount of Pankaj Awale has been shown in the image below. This example shows miscalculations
-                    of Pankaj Awale. Notice the
+    <div id="accounts">
+        <h3>Accounts</h3>
+        <p> <img src="./images/billing.jpg" /> </p>
+            <h3>Account Reports</h3>
+            <div id="cashRegister">
+              <h4>Cash Register</h4>
+              <ul>
+                <li>Cash register contains records of cash details in the account of specified user/provider between certain period. </li>
+                <li>
+                  <p>Here, the recorded amount of Pankaj Awale has been shown in the image below. This example shows miscalculations of
+                    Pankaj Awale. Notice the
                     <strong>Shortfall</strong> at the end of
-                    <strong>Type</strong> column. This is the case where the amounts do not matche with the amount deposited in and
-                    withdrawn out from the till by the user/provider.</p>
-                <p>
+                    <strong>Type</strong> column. This is the case where the amounts do not match with the amount deposited in and withdrawn
+                    out from the till by the user/provider.</p>
+                  <p>
                     <img src="./images/CreateNew/RegisterHistory.jpg" /> </p>
-                <blockquote>
+                  <blockquote>
                     <p>
-                        <strong>NOTE:</strong>
-                        <em>Special care should be taken while entering the amounts in the billing section.</em>
+                      <strong>NOTE:</strong>
+                      <em>Special care should be taken while entering the amounts in the billing section.</em>
                     </p>
-                </blockquote>
-            </li>
-            <li>
-                <p>The
-                    <strong>+/-</strong> button leads to a page where selection of the user/provider along with the type of amount
-                    recorded can be viewed and updated.</p>
-                <p>
+                  </blockquote>
+                </li>
+                <li>
+                  <p>The
+                    <strong>+/-</strong> button leads to a page where selection of the user/provider along with the type of amount recorded
+                    can be viewed and updated.</p>
+                  <p>
                     <img src="./images/cashRegister.jpg" /> </p>
-                <p>
+                  <p>
                     <img src="./images/providerAndType-CashResister.jpg" /> </p>
-            </li>
-            <li>
-                <p>Date is selected to record data in the cash register's history. </p>
-            </li>
-            <li>The
-                <strong>Provider</strong> shows the list of users for identification.</li>
-            <li>
-                The
-                <strong>Type</strong> contains,
-                <ul>
+                </li>
+                <li>
+                  <p>Date is selected to record data in the cash register's history. </p>
+                </li>
+                <li>The
+                  <strong>Provider</strong> shows the list of users for identification.</li>
+                <li>
+                  The
+                  <strong>Type</strong> contains,
+                  <ul>
                     <li>
-                        <em>Closing Amount</em>: The remaining amount in the till at the user's end shift.</li>
+                      <em>Closing Amount</em>: The remaining amount in the till at the user's end shift.</li>
                     <li>
-                        <em>Collection</em>: The amount collected from the till by the authorized person.</li>
+                      <em>Collection</em>: The amount collected from the till by the authorized person.</li>
                     <li>
-                        <em>Initial Amount</em>: The amount in the till at the beginning of the shift.</li>
-                </ul>
-            </li>
-        </ul>
-        <blockquote>
-            <p>NOTE:
-                <em>The
-                    <strong>Cash Register</strong> stores history of the till i.e. starting amount, closing amount and collected
-                    amount. It also lists refunded amounts and shortfalls. Shortfall is the difference in amount in the till
-                    that does not matches with the amount from the system's report.</em>
-            </p>
-        </blockquote>
-        <h4>Day Book</h4>
-        <ul>
-            <li>The Day Book records all the transactions that took place in that day.</li>
-            <li>
-                Select the required time frame and the name of the User (Provider) to see the records.
-                <ul>
+                      <em>Initial Amount</em>: The amount in the till at the beginning of the shift.</li>
+                  </ul>
+                </li>
+              </ul>
+              <blockquote>
+                <p>NOTE:
+                  <em>The
+                    <strong>Cash Register</strong> stores history of the till i.e. starting amount, closing amount and collected amount. It
+                    also lists refunded amounts and shortfalls. Shortfall is the difference in amount in the till that does not matches
+                    with the amount from the system's report.</em>
+                </p>
+              </blockquote>
+            </div>
+            <div id="dayBook">
+              <h4>Day Book</h4>
+              <ul>
+                <li>The Day Book records all the transactions that took place in that day.</li>
+                <li>
+                  Select the required time frame and the name of the User (Provider) to see the records.
+                  <ul>
                     <li>The table lists the type of amount as
-                        <strong>In</strong> and
-                        <strong>out.</strong>
-                        <strong>In</strong> indicate cash that came in and
-                        <strong>Out</strong> indicate amount that went out from the till (refunds most likely).</li>
-                </ul>
-            </li>
-            <li>
-                <p>The
-                    <strong>Print</strong> option on the top right can be used to print the list. This list also can be exported in
-                    Excel format by pressing
+                      <strong>In</strong> and
+                      <strong>out.</strong>
+                      <strong>In</strong> indicate cash that came in and
+                      <strong>Out</strong> indicate amount that went out from the till (refunds most likely).</li>
+                  </ul>
+                </li>
+                <li>
+                  <p>The
+                    <strong>Print</strong> option on the top right can be used to print the list. This list also can be exported in Excel format
+                    by pressing
                     <strong>CSV Export</strong>. CSV stands for Comma Separated Values. </p>
-                <p>
-                    <img src="./images/daybook.JPG" /> </p>
-            </li>
-        </ul>
-        <h4>Cash Collection</h4>
-        <ul>
-            <li>Cash collection keeps records of cash collected by the provider/user.</li>
-            <li>The
-                <strong>Print</strong> option on the top right can be use to print the list. It can also be exported in Excel format
-                by pressing **CSV Export&quot;, CSV stands for Comma Separated Values. </li>
-        </ul>
-        <h4>Price Check</h4>
-        <ul>
-            <li>
-                <p>This section allows user to check prices for different tests and other items (like appointment price for
-                    different doctors or price of different tests) that a patient can perform in the hospital. These prices
-                    can be printed or exported in Excel format by pressing Export CSV.</p>
-                <p>
+                  <p>
+                    <img src="./images/daybook.jpg" /> </p>
+                </li>
+              </ul>
+            </div>
+            <div id="cashCollection">
+              <h4>Cash Collection</h4>
+              <ul>
+                <li>Cash collection keeps records of cash collected by the provider/user.</li>
+                <li>The
+                  <strong>Print</strong> option on the top right can be used to print the list. It can also be exported in Excel format by
+                  pressing **CSV Export&quot;, CSV stands for Comma Separated Values. </li>
+              </ul>
+            </div>
+            <div id="priceCheck">
+              <h4>Price Check</h4>
+              <ul>
+                <li>
+                  <p>This section allows user to check prices for different tests and other items (like appointment price for different
+                    doctors or price of different tests) that a patient can perform in the hospital. These prices can be printed or
+                    exported in Excel format by pressing Export CSV.</p>
+                  <p>
                     <img src="./images/CreateNew/PriceCheck.jpg" /> </p>
-            </li>
-        </ul>
-
+                </li>
+              </ul>
+            </div>
+            <div id="salesBook">
+              <h4>Sales Book</h4>
+              <p>This shows all the invoices that are dealt with in the provided time frame.</p>
+                <p><img src="./images/salesBook.jpg" alt=""></p>
+            </div>
+            <div id="auditTrial">
+              <h4>Audit Trial</h4>
+                <p>This is the activity log. All the information regarding invoices, refunds and changes in any price can be found here.</p>
+                <p>Activity can be viewed by selecting a date range, user and type of module. Press <strong>Submit </strong>to view the activity logs.</p>
+                <p>The logs can be exported in an Excel format or as a pdf.</p>
+                  <p><img src="./images/auditTrail.jpg" alt=""></p>
+            </div>
+            <div id="MaterializedView">
+              <h4>Materialized View</h4>
+                <p>Materialised view provides information regarding all the transaction. If the transactions are sent to the IRD then the <strong>IRD Sync</strong> column will indicate "Yes" otherwise "No". </p>
+                  <p><img src="./images/materialsedView.jpg" alt=""></p>
+            </div>
+            <div id="saleRefund">
+              <h4>Sale Refund</h4>
+                <p>This shows all the refunds that are given in the selected time frame.</p>
+                <p><img src="./images/salesRefund.jpg" alt=""></p>
+            </div>
     </div>
 
     <div id="acl">
-            <p id="backToTop"><a href="#tableOfContent">Back to Top</a></p>
        
         <h4>Managing ACL - Access Control List</h4>
         <blockquote>
@@ -1052,7 +1072,7 @@
             <strong>NOTE:</strong>
             <em>The
                 <strong>double arrows</strong> sends all the items to the respective side, selection is not required here, so be careful while using it. Whereas
-                <strong>single arrows</strong> sends the selected item to the corresponding side.</em>
+                <strong>single arrows</strong> send the selected item to the corresponding side.</em>
             </p>
         </blockquote>
         <p>

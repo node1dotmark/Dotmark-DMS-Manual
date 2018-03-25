@@ -76,5 +76,9 @@
 			<param name="Local" value="DMS HTML NEW\5_ConfigurationDMS.html">
 			</OBJECT>
 	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Pharmacy Billing">
+		<param name="Local" value="DMS HTML NEW\pharmacy.htm">
+		</OBJECT>
 </UL>
 </BODY></HTML>

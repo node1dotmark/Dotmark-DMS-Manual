@@ -513,58 +513,341 @@
         <p>After logging in, you will be navigated to the DMS dashboard. DMS dashboard contains tools that can be used for many purposes. These all will be discussed in this manual.</p>
         <p>Doctor can scan NFC card directly to view the patient details from this screen. NFC card won't work on other screens.</p>
             <img src="introduction.jpg" alt="">
+        <p>Click on the icon on the top-right corner of the screen to view options related to the user account.</p>
+        <p>Clicking log out will sign you off from the session and redirect you to the log in page.</p>
+            <p><img src="logout.jpg" alt=""></p>
+
+        <h3 id="feedbacks">Feedbacks</h3>
+            <p>Feedbacks for improving DMS system, error reporting and additional comments can be sent. Press feedback icon on the top
+            right corner next to the Search bar and fill up the form.</p>
+            <!-- <img src="feedbackIcon.jpg" alt=""> -->
+                <img src="feedbackForm.jpg" alt="">
+
+
+        <h3 id="eventsAndNotices">Events and Notices</h3>
+            <p>Upcoming events and notices can be easily added to the dashboard. On the side bar scroll down, find
+            <strong>Events</strong> and <strong>Notice</strong>. Click on them and fill up the form as required and post it on the dashboard.</p>
+            <p><strong><em>NOTE:</em></strong>
+            <em><strong>Every account holder can view this on their dashboard and could be super useful, so it should be properly utilized.</strong></em></p>
+                <p><img src="EventForm.jpg" alt=""></p>
+            <br>
+                <p><img src="NoticeForm.jpg" alt=""></p>
+            <p>These messages will be posted for certain time only.<strong>From</strong> and <strong>To</strong> indicates start date and end date respectively of that message.</p>
 
 </div>
         
-<div id="feedbacks">
-    <h1>Feedbacks</h1>
-        <p>Feedbacks for improving DMS system, error reporting and additional comments can be sent. Press feedback icon on the top right corner next to the Search bar and fill up the form.</p>
-            <img src="feedbackIcon.jpg" alt="">
-            <img src="feedbackForm.jpg" alt="">
-</div>         
-        
-<div id="eventsAndNotices">
-    <h1>Events and Notices</h1>
-</div>
 
 <div id="createPatient">
     <h1>Create New Patient</h1>
-
+        <p>Click on the <strong>Create New Patient </strong>button on the top left of the screen as shown in the image below.</p>
+            <img src="CreatePatient.jpg" alt="">
+        <p>Click on the checkbox as shown in the figure below to reveal its content and fill up the patient details and press <strong>Create New Patient</strong> on the bottom of the page. Note that entering the age of the patient will auto convert the patient's age. To use this facility simply type the age of the patient in the D.O.B section and focus-out (click somewhere else) to convert age into date in yyyy-mm-dd format as shown in the image below.</p>
+            <img src="checkbox.jpg" alt="">
+            <p>Here,</p>
+            <ul>
+            <li>
+                <strong>Who </strong>section contains primary details and if any mandatory field is missed out then a message will be displayed,
+                and missing fields will be marked red.</li>
+            </ul>
+            <img src="redBorder.jpg" alt="">
+            <ul>
+            <li>
+                <strong>Contact: </strong>This is the contact details of the patient.</li>
+            <img src="contact.jpg" alt="">
+            <li id="choices">
+                <strong>Choices:</strong> Patient's custom preferences.</li>
+            <img src="Choices.jpg" alt="">
+            <ul>
+                <li>
+                <em>Provider:</em> This is the Doctor.</li>
+                <li>
+                <em>Referring Provider:</em> Provider referring to another provider.</li>
+                <li>
+                <em>Pharmacy:</em> Pharmacy that patient prefers.</li>
+                <li>
+                <em>HIPAA Notice Received:</em> The HIPAA Privacy Rule mandates that health care providers distribute a Notice of Privacy
+                Practices to all patients. The Notice of Privacy Practices also describes the HIPAA defined patient rights related
+                to use and disclosure of the individual's health information.</li>
+                <li>
+                <em>Leave Message With:</em> Not Applicable.</li>
+                <li>
+                <em>Allow SMS:</em> Not Applicable.</li>
+                <li>
+                <em>Allow Immunization Registry Use:</em> Not Applicable.</li>
+                <li>
+                <em>Allow Health Information Exchange:</em> Not Applicable.</li>
+                <li>
+                <em>Care Team:</em> Not Applicable.</li>
+                <li>
+                <em>Allow Voice Message:</em> Not Applicable.</li>
+                <li>
+                <em>Allow Mail Message:</em> Not Applicable.</li>
+                <li>
+                <em>Allow Email:</em> Not Applicable.</li>
+                <li>
+                <em>Allow Immunization Info Sharing:</em> Not Applicable.</li>
+                <li>
+                <em>Allow Patient Portal:</em> This option determines whether to give patient access to the patient portal or not.
+                This configuration will appear on
+                <a href="#demographics">Patient Demographic</a> page on top, next to the patient's name.</li>
+                <li>
+                <em>CMS Portal Login:</em> Not Applicable.</li>
+            </ul>
+            <li>
+                <strong>Employer: </strong>Current employer of the patient.</li>
+            <img src="employer.jpg" alt="">
+            <li>
+                <strong>Stats: </strong>Full background of the patient.</li>
+            <img src="stats.jpg" alt="">
+            <li>
+                <strong>Misc: </strong>Deceased status of the patient.</li>
+            <img src="misc.jpg" alt="">
+            </ul>
+            <p>
+            <strong>NOTE: Creating a new patient will first check if any existing patients matches the current detail of the patient, if
+                non-item matches then click on Confirm Create New Patient.</strong>
+            </p>
+            <img src="existingPatientCheck.jpg" alt="">
+            <ul>
+            <li>After creating new patient, you will be navigated to the
+                <strong>Patient Demographics </strong> This page will contain all the personal information of the patient along with his/her
+                appointments and medical reports (Future medical report of the newly created patient).</li>
+            </ul>
 </div>
 
 <div id="demographics">
     <h1>Patient Demographics</h1>
+        <p>The following image illustrates how a patient portal can be configured and assigned. To allow <strong>Patient Portal</strong> access must be given from the<strong> <a href="#choices">Choices</a></strong> section which has been explained in <strong>Create New Patient</strong> section above.</p>
+                <img src="patientPortalAuth.jpg" alt="">
+            <ul>
+            <li>This page enlists all the necessary information regarding the patient. All the future test results, charges and editing
+                of the records can be managed from here.</li>
+            <li>This page will be updated frequently with every visit the record history will be published here by the doctors or other
+                responsible members.</li>
+            <li>Any notes for that patient can be attached by clicking the
+                <strong>Notes</strong> link and following the instructions (Click on the Patient name to come back to the demographics page).</li>
+            </ul>
+                <p><img src="OtherLinks.jpg" alt=""></p>
+
+            <ul>
+            <li>The links below the name of the patient, as shown in the image below, gives further details of the patient.</li>
+            <li>
+                <strong>History: </strong>Click history tab to view the following page. This section contains general history of the patient,
+                family's medical history, relative's medical history, lifestyle habits and other details. Click on the edit button
+                to add or edit any of the contents.</li>
+            <p>
+                <img src="history.jpg" alt="">
+            </p>
+            <li>
+                <strong>Report: </strong>CCR as shown in the image below exchanges most relevant and timely clinical information about a
+                patient among providers, institutions, or others. This has to be completed upon referral or transfer or other transition
+                of a patient from one caregiver to another. To be completed by Physicians, Nurses, Ancillary providers (e.g., social
+                work, physical therapy, occupational therapy). CCD is an electronic document exchange standard for sharing patient
+                summary information. Summaries include the most commonly needed pertinent information about current and past health
+                status in a form that can be shared by all computer applications, including web browsers, electronic medical record
+                (EMR) and electronic health record (EHR) software systems.
+            </li>
+            <p>
+                <img src="ccrReport.jpg" alt="">
+            </p>
+            <li>
+                <strong>Documents: </strong>Click Documents to upload images files of the test conducted like x-rays or a pdf file of some
+                kind. Select a category and upload a files related to the subject to keep record of the active patient.</li>
+            <p>
+                <img src="documents.jpg" alt="">
+            </p>
+            <li>
+                <strong>Transactions: </strong>
+            </li>
+            <li>
+                <strong>Issues: </strong>
+            </li>
+            <img src="issues.jpg" alt="">
+            <li>
+                <strong>Ledger: </strong>Front office do not have access to this option.</li>
+            <li>
+                <strong>External Data: </strong>
+            </li>
+            </ul>
 </div>
          
 <div id="searchPatient">
     <h1>Searching an Existing Patient</h1>
+        <p>Patients search can be done from the search bar or the create new patient page as shown in the image below.</p>
+            <img src="searchFound.jpg" alt="">
+            <img src="Search.jpg" alt="">
+        <p>After selecting a patient, A button will appear at the top of the page called active patient. This will stay active until it is cleared using the <strong>Clear Active Patient</strong> button as shown in the image below.</p>
+            <img src="ActivePatient.jpg" alt="">
+            
+        <h3 id="encounter">Encounters</h3>
+            <p>Encounter history stores all the active patient visits in the past.</p>
+            <blockquote>
+            <p>Note: Make sure to select a patient to make this section visible. This patient will be an active patient in the DMS system until the <strong>Clear Active Patient</strong> button is pressed.</p>
+            </blockquote>
+                <p><img src="encounters.jpg" alt=""></p>
+            <p><strong>New Encounter</strong> will display the following form. This encounter will be created for the active patient i.e. Alis Khadka, as shown in the image below. Please fill in the details as required and save it for future reference.</p>
+                <p><img src="newEncounter.jpg" alt=""></p>
+            <p>All the past encounters of the active patient will be displayed in this section. The following patient just have one
+            encounter.</p>
+                <p><img src="pastEncounters.jpg" alt=""></p>
+            <p>Active patient's encounter history will be displayed as a list in this dropdown as shown in the image below.</p>
+                <p><img src="encounterHistory.jpg" alt=""></p>
+  
 </div>
         
-<div id="encounter">
-    <h1>Encounters</h1>
-</div>
+
 
 <div id="createAppointment">
-    <h1>Create New Appointment</h1>
+    <h1>Creating/Editing Appointments</h1>
+        <p>Click on the add button to create an appointment as shown in the image below.</p>
+            <p><img src="CreateAppointment.jpg" alt=""></p>
+        <p>Fill up the form, find the available date and press save.</p>
+            <p><img src="appointmentForm.jpg" alt=""></p>
 </div>
         
 <div id="dashboard">
     <h1>Dashboard</h1>
         <h3>Appointment</h3>
+            <p>It shows the list of patients&rsquo; appointments for the logged in doctor. It contains all past, present and future appointments detail. You can also select certain date to view appointments for that date. Press <strong>Today</strong> to see today&rsquo;s appointments.</p>
+                <p><img src="dashboardAppointment.jpg" alt=""></p>
+                <p><img src="patientStatus.jpg" alt=""></p>
+            <p>After the appointment is finished. The duration and its detail will be stored in the finished option as shown in the image below.</p>
+                <p><img src="finished.jpg" alt=""></p>
+
         <h3>Calendar</h3>
+            <p>Select date and department (from the dropdown, below Providers) to view all the appointments of the Doctors. You can also create appointments by clicking on the time displayed as shown in the image below. On clicking on time, it will navigate user to the create new appointment page.</p>
+                  <p><img src="calendar.jpg" alt=""></p>
+
         <h3>Test Status</h3>
+            <p>This displays list of all tests (with their respective date) that are pending, has been sent for processing and list of other options from the dropdown as shown below. Select the required option from the<strong>Status</strong> to view the list on the selected status. Selected list can be printed from the printer icon or can also be exported to CSV (an Excel format list).</p>
+                <img src="statusPending.jpg" alt="">
+                <img src="internalLab.jpg" alt="">
+            <p>This<strong>Status</strong> section has to updated by the lab technician. This is done to keep track of the test which will also be displayed in the Procedure List of the patient. Search the patient from the search bar, click on the patient to go to the Procedure list section.</p>
+                <img src="testStatus.jpg" alt="">
+
         <h3>Order List</h3>
+            <p>This displays patient's procedure order list of the selected date. One procedure order can have multiple tests. For example, a patient has been given procedure order for testing his/her stool and blood. So, in this case, the patient will have two tests in one order. He/she can also have multiple order in one day. As shown in the image below.</p>
+                <img src="orderList.jpg" alt="">
+            <p>Multiple test of a single patient is displayed in the image below.</p>
+                <img src="differentTest.jpg" alt="">
+            <p>Click on a patient to see the details of the patient, his/her order details and the status of the procedure order.</p>
+                <img src="patientTestDetails.jpg" alt="">
+            <p>Again, click on the patient to view the following screen.</p>
+            <p>Use the barcode icon to print the barcode of the patient's procedure order. Copy or scan the specimen id (SPxxxxxx) and place it under the <strong>Specimen</strong> and select the status of the specimen.
+            <strong>Status </strong>provides information regarding what is going to happen with that specimen. Hit submit after everything is completed as described.</p>
+                <img src="specimenBarcode.jpg" alt="">
+            <p>Submitting the form will redirect user to the following screen, which will be used in the near future to provide update on the specimen's test.</p>
+                <img src="afterSubmitScreen.jpg" alt="">
+            <p>Future user should click on the patient to follow up with the process on the following screen.</p>
+            <p>Enter the new updates with the test and press update to save the record.</p>
+                <img src="updateSpecimenRecord.jpg" alt="">
+
         <h3>Quick Order</h3>
+            <p>Fill up the form as shown in the image below. Select required test (Eg: Laboratory or Radiology) from the list, search the test code and press <strong>Save</strong>. This will create procedure order for that patient with the selected provider.</p>
+                <p><img src="procedureOrder.jpg" alt=""></p>
+
         <h3>Doctor</h3>
+            <p>This will list all the Doctors with their availability status. Select date to view list of Doctors for that date with their on-duty status.</p>
+                <p><img src="doctor.jpg" alt=""></p>
+
         <h3>I.P.D</h3>
+            <p>Hospital Inpatient Care (IPD) requires patient with medical problem that is serious enough for a doctor to admit into the hospital for an overnight stay. Select required task from the list in IPD section.</p>
+                <img src="ipdHomeScreen.jpg" alt="">
+
+                <h4>Admit Patient</h4>
+                    <h6>Admission Form</h6>
+                        <p>To fill up admission form please fill up the new patient details or click <strong>Search Patient</strong> to select an existing patient.</p>
+                        <p>The <strong>Resourse Details</strong> section describes the time frame of the booking, rendering doctor and other details as shown in the image below. Press <strong>Save</strong> when done.</p>
+                            <p><img src="ipdAdmitPatientForm.jpg" alt=""></p>
+                        <blockquote>
+                            <p>This section will also display rooms available at the bottom on the screen.</p>
+                        </blockquote>
+                        <p>The reservation can be viewed and edited from the <strong>Resources</strong> section in the dashboard.</p>
+                    <p><strong>Select a patient to view the following options.</strong></p>
+                        <p><img src="ipdSelectedPatient.jpg" alt=""></p>
+
+                    <h6>Chief Complain</h6>  
+                    <h6>General Examination</h6>  
+                    <h6>Systamatic Examination</h6>  
+                    <h6>Provisional Diagnosis</h6>  
+                    <h6>Consultation Form</h6>  
+                    <h6>Investigation</h6>  
+                    <h6>Cardex</h6>  
+                    <h6>Patient Observation Data</h6>  
+                    <h6>Glasgow Coma Scale</h6>  
+                    <h6>Pupils</h6>  
+                    <h6>Limb Movement</h6>  
+                    <h6>Input Output</h6>
+                        <p>Intake Form</p>
+                        <p>Output Form</p>
+                        <p>Balance</p>
+                    <h6>Discharge Form</h6>  
+
+                <h4>Ward</h4>
+                    <p>Displays all different wards available in the Hospital with number of booked beds, followed by total number of beds as shown in the image below.</p>
+                        <p><img src="ipdWard.jpg" alt=""></p>
+                    <p>Click on a ward section to view patients who have bookings made.</p>
+                        <p><img src="ipdWardDelux.jpg" alt=""></p>
+
+                <h4>Patient List</h4>
+                    <p>Show the list of all the IPD patients list with description as follow.</p>
+                        <p><img src="ipdPatientList.jpg" alt=""></p>
+
+                <h4>Calender</h4>
+                    <p>Click on <strong>Calendar</strong> to view all the existing ward bookings with details. Click on the booking to view details. Editing is only possible from the <strong>Resourses</strong> section.</p>
+                    <p>Filter the view by selecting one of the ward types as shown in the image below.</p>
+                        <p><img src="ipdCalendar.jpg" alt=""></p>
+
+                <h4>Nurse Report</h4>
+                    <p></p>
+
+                <h4>Nurse Log</h4>
+                    <p></p>
+
         <h3>Nurse</h3>
+
         <h3>Patient</h3>
+            <p></strong> It shows list of all patients.</p>
+
         <h3>Invoice</h3>
+            <p>Invoice stores all the payment history of a patient. Payment is done through the <strong>Dispense</strong> section.</p>
+            <p>Invoice can be <strong>Printed </strong>or <strong>Exported as CSV</strong> from here. CSV basically means in Microsoft Excel format.</p>
+            <p>Invoice id is used in the <strong>Refund</strong>.</p>
+            <p>Select a date range and press <strong>Submit</strong> to view history of that date.</p>
+                <p><img src="invoice.png" alt=""></p>
+
         <h3>Refund</h3>
+            <p>Invoice id is the <strong>Bill Number</strong> of the invoice which is made up of Fiscal year/Invoice add.</p>
+                <p><img src="billNumber.jpg" alt=""></p>
+            <p>Enter the invoice id and press <strong>Submit </strong> to proceed with the refund process for that invoice.</p>
+            <p>Select the <strong>Payment Method </strong> and press <strong>Refund </strong>.</p>
+                <p><img src="refund.jpg" alt=""></p>
+            <p>Authorized users are only allowed to grant refund. Ask to enter their username and password.</p>
+                <p><img src="refundAuth.jpg" alt=""></p>
+            <p>Enter the quantity that is to be refunded and press save to create a new invoice for that transaction.</p>
+                <p><img src="refundQuantity.jpg" alt=""></p>
+            <blockquote>
+            <p><strong>NOTE: </strong>Please note that the old invoice of the patient will be discarded and new invoice with new id will be generated. In other words, the original invoice of the patient will be modified according to the quantities and items he/she wants to return. Then, this modified invoice will be stored with a new id attached to it. The original will be discarded and the modified invoice will now be the original invoice.</p>
+            </blockquote>
+
         <h3>Dispense</h3>
+            <p>This section is used for third party patients who may visit the pharmacy to buy their required medication. This section should not be used for I.P.D or O.P.D patients.</p>
+
         <h3>IPD Patient</h3>
+            <p>This will show the user the list of all the patient prescriptions assigned by the <strong>Cardex department</strong>. Select the required patient and follow the same steps for the payment discussed in <strong>Search an Existing Patient/Payments</strong>.</p>
+
         <h3>Resources</h3>
+            <p>The Available resources are shown in Resource Availability table. You can add reservation if you want to reserve any wards.</p>
+                <p><img src="reserve.JPG"></p>
+            <p>Fill in the necessary fields to add a reservation.</p>
+                <p><img src="new_reservation.JPG"></p>
+            <p>The reservations are displayed on the Resource Availability, in the Resource section.</p>
+                <p><img src="see_reservation.JPG"></p>
+
         <h3>Department</h3>
+            <p>This will list all the different departments in the hospital along with number of doctors and nurses present in them.</p>
+                <p><img src="department.jpg" alt=""></p>
+
 </div>
 
 <div id="calendar">
@@ -589,6 +872,8 @@
             <p>Upload</p>
             <p>Pending Approval</p>
         <h4>Patient Education</h4>
+            <p>Search any information on the web from here.</p>
+                <img src="patientEducation.jpg" alt="">
         <h4>Chart Tracker</h4>
             <p>Track patients with this function. Enter the <strong>Patient ID</strong> to view the information.</p>
 
@@ -597,7 +882,8 @@
 <div id="message">
     <h1>Message</h1>
         <p>History of sent messages will be displayed here with details like from, patient, type, date and status. Click Add New to create message and send it to the respective patient.</p>
-
+            <p><img src="messageReminder.jpg" alt=""></p>
+            <p><img src="messeageForm.jpg" alt=""></p>
 </div>
 
 <div id="medicalCalculator">
@@ -615,61 +901,87 @@
 
 <div id="ipd">
     <h1>IPD</h1>
-        <p>Hospital Inpatient Care (IPD) requires patient with medical problem that is serious enough for a doctor to admit into the hospital for an overnight stay. Select required task from the list in IPD section.</p>
-            <img src="ipdHomeScreen.jpg" alt="">
-        <h4>Admit Patient</h4>
-            <h6>Admission Form</h6>
-                <p>To fill up admission form please fill up the new patient details or click <strong>Search Patient</strong> to select an existing patient.</p>
-                <p>The <strong>Resourse Details</strong> section describes the time frame of the booking, rendering doctor and other details as shown in the image below. Press <strong>Save</strong> when done.</p>
-                    <p><img src="ipdAdmitPatientForm.jpg" alt=""></p>
-                <blockquote>
-                    <p>This section will also display rooms available at the bottom on the screen.</p>
-                </blockquote>
-                <p>The reservation can be viewed and edited from the <strong>Resources</strong> section in the dashboard.</p>
-            <p><strong>Select a patient to view the following options.</strong></p>
-                <p><img src="ipdSelectedPatient.jpg" alt=""></p>
-            <h6>Chief Complain</h6>  
-            <h6>General Examination</h6>  
-            <h6>Systamatic Examination</h6>  
-            <h6>Provisional Diagnosis</h6>  
-            <h6>Consultation Form</h6>  
-            <h6>Investigation</h6>  
-            <h6>Cardex</h6>  
-            <h6>Patient Observation Data</h6>  
-            <h6>Glasgow Coma Scale</h6>  
-            <h6>Pupils</h6>  
-            <h6>Limb Movement</h6>  
-            <h6>Input Output</h6>
-                <p>Intake Form</p>
-                <p>Output Form</p>
-                <p>Balance</p>
-            <h6>Discharge Form</h6>  
-
-        <h4>Ward</h4>
-            <p>Displays all different wards available in the Hospital with number of booked beds, followed by total number of beds as shown in the image below.</p>
-                <p><img src="ipdWard.jpg" alt=""></p>
-            <p>Click on a ward section to view patients who have bookings made.</p>
-                <p><img src="ipdWardDelux.jpg" alt=""></p>
-
-        <h4>Patient List</h4>
-            <p>Show the list of all the IPD patients list with description as follow.</p>
-                <p><img src="ipdPatientList.jpg" alt=""></p>
-
-        <h4>Calender</h4>
-            <p>Click on <strong>Calendar</strong> to view all the existing ward bookings with details. Click on the booking to view details. Editing is only possible from the <strong>Resourses</strong> section.</p>
-            <p>Filter the view by selecting one of the ward types as shown in the image below.</p>
-                <p><img src="ipdCalendar.jpg" alt=""></p>
-
-        <h4>Nurse Report</h4>
-            <p></p>
-
-        <h4>Nurse Log</h4>
-            <p></p>
+        <p>This is the same as IPD described in the dashboard section.</p>
+        
 </div>
 
 <div id="fees">
     <h1>Fees</h1>
-
+        <blockquote>
+            <p><strong>Note: </strong>Payment, Invoice, Refund and Checkout will only be visible when there is an <strong>Active Patient</strong> running in the system. In other words, user must select a patient to deal with the payments related role.</p>
+        </blockquote>
+  
+            <h4>Payment</h4>
+                <p>Payment can only be used for IPD patients.</p>
+                  <p><img src="payment.jpg" alt=""></p>
+  
+            <h4>Invoice</h4>
+                <ul>
+                  <li>Invoice stores all the payment history of a patient. Payment is done through the checkout section below.</li>
+                  <li>Invoice can be reprinted from here.</li>
+                  <li>Invoice id is used in the refund.</li>
+                </ul>
+                    <p><img src="invoice.jpg" alt=""></p>
+                    <p><img src="reprint.jpg" alt=""></p>
+            
+            <h4>Refund</h4>
+                <blockquote>
+                  <p>Please make note of the <strong>Bill Number </strong>, displayed in the image below.</p>
+                  <p>Bill number will be displayed in the receipt of the patient.</p>
+                </blockquote>
+                    <p><img src="fiscalYear.jpg" alt=""></p>
+                <ul>
+                  <li>Enter the bill number and click
+                    <strong>Submit</strong>. The following screen will be displayed for the full refund. Partial refund is not allowed.</li>
+                  <li>Press
+                    <strong>Refund</strong> to proceed with the process. Please note that refund requires authorization from managers or supervisors or any authorized person.</li>
+                </ul>
+                    <p><img src="refundFee.jpg" alt=""></p>
+                    <p><img src="Authorization.jpg" alt=""></p>
+            
+            <h4>Checkout</h4>
+                <ul>
+                  <li>It keeps record of all the unpaid bills of the patient selected.</li>
+                  <li>The encounter option shows all the patient's visits and the amount that had/has been charged during the encounter.
+                    Please select an encounter and press
+                    <strong>Pay</strong> to proceed with the payment.</li>
+                  <li>Also note that patient's PAN or VAT can also be submitted with payment process. PAN or VAT id should be alphanumeric and 9-digit long.</li>
+                </ul>
+                <p>
+                  <img src="Checkout.jpg" alt="">
+                </p>
+                <ul>
+                  <li>In addition, any additional item/items used by the patient can be added through the
+                    <strong>Add Item </strong> button as shown in the figure below.</li>
+                  <li>To remove an item, click on it and press delete. User can also update the item.</li>
+                  <li>To update, change the item and quantity and press
+                    <strong>Update Item</strong>.</li>
+                </ul>
+                <p>
+                  <img src="deleteSelectedItem.jpg" alt="">
+                </p>
+                <ul>
+                  <li>Notice the tax difference. In case of tax difference payment has to be done separately.</li>
+                </ul>
+                <p>
+                  <img src="CheckoutAddItem.jpg" alt="">
+                </p>
+                <ul>
+                  <li>You can add notes to the payment. Make it private or public as situation demands.</li>
+                  <li>Give discounts if any. Discounts can be given in Percentage only. Also note that if the total amount at decimal is less than or greater than 0.5 then it will be rounded to the nearest value. Therefore, the total amount will only be in 1.0 or 1.5 or 2 but not in between.</li>
+                  <li>Press save to proceed with the payment.</li>
+                </ul>
+                <p>
+                  <img src="payInvoice.jpg" alt="">
+                </p>
+                <blockquote>
+                  <p>
+                    <strong>Note: </strong>Please make note of the bill number which is made up of <em>fiscal year/invoice id</em>. Invoice id will be used if patient requests a refund.</p>
+                </blockquote>
+  
+                <p>
+                  <img src="billingSheet.jpg" alt="">
+                </p>
 </div>
 
 <div id="report">
@@ -687,11 +999,50 @@
 <div id="procedures">
     <h1>Procedures</h1>
         <h4>Providers</h4>
+            <p>A hospital can have multiple departments handling various procedure order. These will be mentioned here.</p>
+                <img src="procedureProviders.jpg" alt="">
+
         <h4>Configuration</h4>
-        <h4>Load Compendium</h4>
-        <h4>Batch Result</h4>
-        <h4>Electronic Reports</h4>
-        <h4>Lab Document</h4>
+            <p>Configuration controls all the tests that the Hospital conducts internally or externally.</p>
+            <p>These tests can be categorized into groups, procedure order or other as required. Different topics will have different forms and their contents.</p>
+            <p>The basic concept of this configuration, starting with creating a group is as follows:</p>
+            <ul>
+                <li>Press <strong>Add Top Level</strong> to add new test as shown in the image below.</li>
+                    <img src="configuration.jpg" alt="">
+                <li>Select <strong>Group</strong> in which you want to create multiple <strong>Procedure Order</strong> and its related <strong>Discrete Results</strong>.</li>
+                <li>To create a package of multiple procedure order and its different tests, you can use <strong>Order Group</strong> and combine different tests of different procedure orders to a single packaged order with a discounted price.</li>
+                    <img src="AddTopLevel.jpg" alt="">
+                <li>Selecting <strong>Group</strong> shows the following form. Fill the form to create a group type and press save.</li>
+                    <img src="group.jpg" alt="">
+                <li>This will save the file in the <strong>Configuration</strong> page. You can also edit this group or add different procedure orders using the <strong>Add</strong> button.</li>
+                    <img src="createdGroup.jpg" alt="">
+                <li>Now, we need to add some procedure order to that group. Keep in mind that you can also simply create procedure order instead of making a group and adding it in.</li>
+                <li>Selecting <strong>Procedure Order</strong> shows the following form. Please go through the form to know what to enter in the corresponding fields.</li>
+                    <img src="AddToTopLevel.jpg" alt="">
+                <li>We have successfully added a procedure to the group "Blood Group".</li>
+                    <img src="procedureOrderAdded.jpg" alt="">
+                <li>Adding <strong>Discrete Result</strong> to that procedure follows the same process. The below form shows discrete result being added to the same group (Blood Group).</li>
+                    <img src="discreteResult.jpg" alt="">
+                    <br>
+                    <img src="beforeFoodAdded.jpg" alt="">
+                <li>Order group simple creates a package of selected tests/orders with a combined price. The image below shows multiple tests being added to a package.</li>
+                    <img src="orderGroup.jpg" alt="">
+                </ul>
+                        <blockquote>
+                            <p>Specimen id are unique foe each test but if multiple tests are selected and grouped in <strong>Order Group</strong> then the user can select whether the specimen id for that group should have same specimen id or multiple individual specimen id from the "Yes" or "No" choice.</p>
+                        </blockquote>
+                
+            <h4>Load Compendium</h4>
+                <p></p>
+
+            <h4>Batch Result</h4>
+                <p></p>
+
+            <h4>Electronic Reports</h4>
+                <p></p>
+
+            <h4>Lab Documents</h4>
+                <p></p>
 </div>
 
 <div id="radiology">
@@ -701,6 +1052,33 @@
 
 <div id="inventory">
     <h1>Inventory</h1>
+        <h6>Inventory contains all the information regarding drugs that the pharmacy owns. All the new arrived or damaged drugs should be updated here. This will keep track of all the items and keeps user notified about the item's status like out-of-stock or about to finish or other.</h6>
+            
+            <h4>Management</h4>
+                <p>This section updates the inventory of the pharmacy. All the drug details can be added and edited here.</p>
+                <p>Type a drug name in the search bar and click <strong>Search </strong> to view the list of related drugs.</p>
+                    <p><img src="management.png" alt=""></p>
+                <p>Click on the <strong>Lot </strong> number as shown in the image above and click <strong>Destroy</strong> to move that item in the <strong>Destroyed </strong> section.</p>
+                    <p><img src="destroyDrug.jpg" alt=""></p>
+                <p>Click on <strong>Add Drug </strong>is used to add new drug in the list of items. This will navigate to a drug details form. Fill up the form correctly with all the necessary details and press save to create a new entry on the system.</p>
+                    <p><img src="addDrug.jpg" alt=""></p>
+
+            <h4>Destroyed</h4>
+                <p>Select a time range and click <strong>Submit </strong> to view drugs that has been sent to the destroyed list.</p>
+                <p>Drugs are sent here, from the <strong>Management </strong>section as explained above.</p>
+                <p>All the expired or damaged drugs will be listed here.</p>
+                    <p><img src="destroyedDrug.jpg" alt=""></p>
+                <p>Click on <strong>Lot</strong> number, in the above image, to add full description on how the drug ended here.</p>
+                <p><img src="detailsOfDestroyed.jpg" alt=""></p>
+                
+            <h4>Transaction</h4>
+                <p>Transaction stores all the reports regarding drugs usages. Select a preferred report type and a date range to view the transaction history of that type. For more detailed filtering select an option from the <strong>Search By</strong>.</p>
+                    <p><img src="transaction.png" alt=""></p>
+                    <blockquote>
+                    <p>Drugs created but not placed under any lot number will be filtered by <strong>type</strong>, <em>Inventory</em> and, <strong>Search by</strong>, <em>Not In Inventory</em> option.</p>
+                    </blockquote>
+                <p>Transaction can also be printed out with the <strong>Print </strong> button.</p>
+                <p><img src="printTransction.png" alt=""></p>
 </div>
     
 <div id="administration">
@@ -767,7 +1145,16 @@
 
 <div id="myaccount">
     <h1>My Account</h1>
-
+        <p>Change your password here.</p>
+            <img src="password.jpg" alt="">
+        <h4>Authorizations</h4>
+            <p></p>
+        <h4> Address Book</h4>
+            <p>Most of the details of different departments in the hospital will be stored here.</p>
+        <h4>Office Notes: </h4>
+            <p>Any users can add notes here. These notes will be stored here, and anyone can come here and view these notes.</p>
+        <h4>Configure Tracks</h4>
+            <p></p>
 </div>
 
 <div id="aboutus">

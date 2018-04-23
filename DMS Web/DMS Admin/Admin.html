@@ -1087,6 +1087,47 @@
         <h4>Vitals</h4>
         <h4>Globals</h4>
             <p>Configuration of the DMS System.</p>
+            <h5>Appearance</h5>
+            <h5>Locale</h5>
+            <h5>Features</h5>
+            <h5>Report</h5>
+            <h5>Billing</h5>
+            <h5>E-Sign</h5>
+            <h5>Documents</h5>
+            <h5>Calendar</h5>
+            <h5>Security</h5>
+            <h5>Notifications</h5>
+            <h5>CDR</h5>
+            <h5>Logging</h5>
+            <h5>Miscellaneous</h5>
+            <h5>Portal</h5>
+            <h5>Connectors</h5>
+            <h5>Rx</h5>
+            <h5>PDF</h5>
+                <p>PDF file configuration. This will have effect on the appearance of the PDF file that has been extracted.</p>
+                    <p><img src="Pdf.jpg" alt=""></p>
+            <h5>Pathology</h5>
+                <p>Thi</p>
+                    <p><img src="Pathology.jpg" alt=""></p>
+            <h5>Pharmacy</h5>
+                <p>This is the information regarding the Pharmacy.</p>
+                <blockquote><p>
+                    If <strong>Use Same PAN For Pharmacy</strong> is selected then the PAN provided in this section will be overrided by the information provided in the <strong>Hospital</strong> section.
+                </p></blockquote>
+                    <p><img src="Pharmacy.jpg" alt=""></p>
+            <h5>Hospital</h5>
+                <p>Information of the Hospital and Configuration regarding hospital ID which makes up first four digit in the patient id.</p>
+                <p>Select tax rate type and individual PAN for Hospital and Pharmacy, if applicable.</p>
+                    <p><img src="Hospital.jpg" alt=""></p>
+            <h5>DMS</h5>
+                <p>Information of Dotmark Solutions Pvt. Ltd.</p>
+                    <p><img src="DMS.jpg" alt=""></p>
+            <h5>QMS</h5>
+                <p>This is the Queue Management System. The Service URl, username and password will be provided by the Dotmark Solutions.</p>
+                    <p><img src="QMS.jpg" alt=""></p>
+            <h5>IRD</h5>
+                <p>The details below will be provided by the IRD themself. Admin will have to fill it in accordingly.</p>
+                    <p><img src="IRD.jpg" alt=""></p>
         <h4>Facilities</h4>
             <p>Hospital’s facilities can be added and edited here as shown below. Click on any name of the facilities to edit content.</p>
         <h4>IPD Rooms</h4>
@@ -1109,7 +1150,67 @@
             <p>Access Control List (ACL) manages permission rights to access different department of the DMS service. This is used for security purposes. Not any users can access all the different departments/sections of DMS service. Administrator decides on this.</p>
         <h4>Files</h4>
         <h4>Backup</h4>
-            <p>This is used to creating backup file for safety reasons.</p>
+            <p>Backup data will download all the stored files on the DMS to a .tar file as shown in the figure.</p>
+                <p><img src="backup.jpg" alt=""></p>
+            <ul>
+                <li>Click on the .tar file and extract the content.</li>
+                <li>Extracting content will bring four new .gz files which need to be extracted.</li>
+                <li>Among these four files. Three of them will have .sql.gz and one of the will have tar.gz.</li>
+            </ul>
+                <p><img src="draganddrop.jpg" alt=""></p>
+            <ul>
+                <li>Extract each, and view datas stored in it.</li>
+                <li>Files with .sql.gz requires MySQL Workbench to view the data.</li>
+                <li>The tar.gz file will have all the uploaded document of the patients.</li>
+            </ul>
+                
+                <blockquote>
+                    <p><strong>Note: </strong>To download MySQL Workbench, Google "mysql workbench download" and follow the link to the download page. Read below the instruction on how to use MySQL Workbench to import the database on to your system. Also note that MySQL should be installed to store these databases.</p>
+                </blockquote>
+
+                <blockquote>
+                    <p>Backup for one file will be shown below. Please follow the same procedure to other .sql files.</p>
+                </blockquote>
+                <ul>
+                    <li>Extract .sql.qz file on a folder of your choice. In the example below files are extracted on the desktop.</li>
+                    <li>The extracted .tar.gz file will give Sites folder.</li>
+                    <li>Simply open the files and view the contents. You won't need any additional set up to view files in the folder.</li>
+                </ul>
+                    <p><img src="ExtractedFiles.jpg" alt=""></p>
+                
+                    <p>The .sql files requires additional set up to view and restore the information's it contains.</p>
+                    <p>Assuming MySQL and MySQL Workbench are installed in your system, follow the below steps to restore data.</P>
+                
+                <blockquote>
+                    <p><strong>Important:</strong> Please note that you have to configure MySQL Workbench to view the "root" tab. To view this please follow the instruction on how to install MySQL. There you will set a username and password. This username and password will be used by MySQL Workbench to login to your computer's MySQL database.</p>
+                </blockquote>
+                <ul>
+                    <li>Open MySQL Workbench and click on the tab where is says "root" and "localhost:3306" as shown in the image below.</li>
+                    <li>The user of my database is "root". Password won't be displayed here.</li>
+                    <li>Here, localhost:3306 mean that the MySQL server is running on "localhost" and on port "3306".</li>
+                </ul>
+                    <p><img src="workbench.jpg" alt=""></p>
+                
+                    <ul>
+                        <li>Clicking on "root" tab will navigate to the following screen.</li>
+                        </ul>
+                        <p><img src="dartaImport.jpg" alt=""></p>
+                        <ul>
+                        <li>Follow 1, 2, 3 and 4 steps as shown in the figure below.</li>
+                        <ul>
+                            <li><strong>1: </strong>Click on <em>Data Import/Restore</em></li>
+                            <li><strong>2: </strong>Check on <em>Import from Self-Contained File</em> and click <em>...</em> to give path to the .sql file.</li>
+                            <li><strong>3: </strong>Click <em>New...</em> and give a name to the file that you are storing. Give the name of the file same as the .sql file but without the .sql mentioned on it ("aaemr_billing" in my case).</li>
+                        </ul>
+                        <p><img src="SchemaName.jpg" alt=""></p>
+                        <ul>
+                            <li><strong>4: </strong>Press <em>Start Import</em> to begin the process. Please enter the password if prompted.</li>
+                        </ul>
+                        <p><img src="importComplete.jpg" alt=""></p>
+                    </ul>
+                    <blockquote>
+                        <p>Follow the same procedure to the remaining two .sql file to restore data.</p>
+                    </blockquote>
         <h4>Rules</h4>
         <h4>Alerts</h4>
         <h4>Patient Reminders</h4>
